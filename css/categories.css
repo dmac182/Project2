@@ -39,3 +39,17 @@
 	width: 100%;
 	background-color: grey;
 }
+
+.cate-image {
+	margin: auto;
+}
+
+.cate-header {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.cate-sub-header {
+	font-size: 1.75rem;
+	font-weight: normal;
+}
