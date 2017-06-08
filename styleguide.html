@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>CRATE Crate Style Guide</title>
+
+    <link href="css/styleguide.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1>CRATE Crate Style Guide</h1>
+    <h3>Created by Kevin Lamprecht</h3>
+
+    <nav>
+      
+      <p>
+        Overall Navigation: 
+        <a href="styleguide.html">Style Guide</a>,
+        <a href="wireframes.html">Wireframes</a>,
+        <a href="citations.html">Citations</a>
+      </p>
+
+    </nav>
+    <br>
+
+    <nav>
+      
+      <p>
+        Go to:
+        <a href="#interactive_elements">Interactive Elements</a>,
+        <a href="#text_elements">Text Elements</a>,
+        <a href="#combined_elements">Combined Elements</a>
+      </p>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <div class="text-spacer">
+        <h3>Rendered Element:</h3>
+        <a href="index.html" class="main-nav-header-example">CRATE LIST</a>
+		</div>
+
+        <div class="text-spacer">
+        <h3>CSS Selector:</h3>
+        <p>.main-nav-header-example</p>
+        </div>
+
+        <div class="text-spacer-code">
+        <h3>Sample Code:</h3>
+        <code>&lt;a href="index.html" class="main-nav-header-example"&gt;CRATE LIST&lt;/a&gt;</code>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>In-text link</h2>
+
+        <div class="text-spacer">
+        <h3>Rendered Element:</h3>
+        Click here to go to the <a href="index.html">CRATE LIST</a>, it's great!
+		</div>
+
+        <div class="text-spacer">
+        <h3>CSS Selector:</h3>
+        <p>a</p>
+        </div>
+
+        <div class="text-spacer-code">
+        <h3>Sample Code:</h3>
+        <code>Click here to go to the &lt;a href="index.html"&gt;CRATE LIST&lt;/a&gt;, it's great!</code>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+        <div class="text-spacer">
+        <h3>Rendered Element:</h3>
+        <form>
+			Product Name:<br>
+			<input type="text" name="productname"><br>
+			Price:<br>
+			<input type="text" name="price">
+		</form>
+		</div>
+
+        <div class="text-spacer">
+        <h3>CSS Selector:</h3>
+        <p>form</p>
+        </div>
+
+        <div class="text-spacer-code">
+        <h3>Sample Code:</h3>
+        <code>
+        	&lt;form&gt;
+				Product Name:&lt;br&gt;
+				&lt;input type="text" name="productname"&gt;&lt;br&gt;
+				Price:&lt;br&gt;
+				&lt;input type="text" name="price"&gt;
+			&lt;/form&gt;
+        </code>
+        </div>
+        
+      </section>
+
+      <section>
+      <!--Forms Reference https://www.w3schools.com/html/html_forms.asp -->
+        <h2>Submit/Reset Buttons</h2>
+
+        <div class="text-spacer">
+        <h3>Rendered Element:</h3>
+        <form>
+			Product Name:<br>
+			<input type="text" name="productname"><br>
+			Price:<br>
+			<input type="text" name="price">
+		</form>
+        <a href="#" class="basic-button">Submit</a>
+        <a href="#" class="basic-button2">Reset</a>
+		</div>
+
+        <div class="text-spacer">
+        <h3>CSS Selector:</h3>
+        <p>.basic-button, .basic-button2, form</p>
+        </div>
+
+        <div class="text-spacer-code">
+        <h3>Sample Code:</h3>
+        <code>
+        	&lt;form&gt;
+				Product Name:&lt;br&gt;
+				&lt;input type="text" name="productname"&gt;&lt;br&gt;
+				Price:&lt;br&gt;
+				&lt;input type="text" name="price"&gt;
+			&lt;/form&gt;
+        	&lt;a href="#" class="basic-button"&gt;Submit&lt;/a&gt;
+        	&lt;a href="#" class="basic-button2"&gt;Reset&lt;/a&gt;
+        </code>
+        </div>
+
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Headings</h2>
+        	<div class ="text-format">
+				<div class="text-spacer">
+					<h3 class="text-content">Rendered Element</h3>
+				</div>
+				<div class="text-spacer">
+					<h3 class="text-content">Font Size</h3>
+				</div>
+				<div class="text-spacer">
+					<h3 class="text-content">Font Style</h3>
+				</div>
+				<div class="text-spacer">
+					<h3 class="text-content">CSS Selector</h3>
+				</div>
+				<div class="text-spacer">
+					<h3 class="text-content">Sample Code</h3>
+				</div>
+			</div>
+			<section>
+			</section>
+        	<div class ="text-format">
+				<div class="text-spacer">
+					<h1 class="text-content">Main Heading</h1>
+				</div>
+				<div class="text-spacer">
+					<h1 class="explanation-text">2rem</h1>
+				</div>
+				<div class="text-spacer">
+					<h1 class="explanation-text">Bold</h1>
+				</div>
+				<div class="text-spacer">
+					<h1 class="explanation-text">h1</h1>
+				</div>
+				<div class="text-spacer">
+					<h1 class="explanation-text"><code>&lt;h1&gt;Main Heading&lt;/h1&gt;</code></h1>
+				</div>
+			</div>
+			<br>
+
+			<div class ="text-format">
+				<div class="text-spacer">
+					<h2 class="text-content">Category Title</h2>
+				</div>
+				<div class="text-spacer">
+					<h2 class="explanation-text">1.75rem</h2>
+				</div>
+				<div class="text-spacer">
+					<h2 class="explanation-text">Normal</h2>
+				</div>
+				<div class="text-spacer">
+					<h2 class="explanation-text">h2</h2>
+				</div>
+				<div class="text-spacer">
+					<h2 class="explanation-text"><code>&lt;h2&gt;Category Title&lt;/h2&gt;</code></h2>
+				</div>
+			</div>
+			<br>
+
+			<div class ="text-format">
+				<div class="text-spacer">
+					<h3 class="text-content">Section Header</h3>
+				</div>
+				<div class="text-spacer">
+					<h3 class="explanation-text">1.25rem</h3>
+				</div>
+				<div class="text-spacer">
+					<h3 class="explanation-text">Bold</h3>
+				</div>
+				<div class="text-spacer">
+					<h3 class="explanation-text">h3</h3>
+				</div>
+				<div class="text-spacer">
+					<h3 class="explanation-text"><code>&lt;h3&gt;Section Header&lt;/h3&gt;</code></h3>
+				</div>
+			</div>
+			<br>
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+        <div class ="text-format">
+				<div class="text-spacer">
+					<h3 class="text-content">Rendered Element</h3>
+				</div>
+				<div class="text-spacer">
+					<h3 class="text-content">Font Size</h3>
+				</div>
+				<div class="text-spacer">
+					<h3 class="text-content">Font Style</h3>
+				</div>
+				<div class="text-spacer">
+					<h3 class="text-content">CSS Selector</h3>
+				</div>
+				<div class="text-spacer">
+					<h3 class="text-content">Sample Code</h3>
+				</div>
+			</div>
+			<section>
+			</section>
+        <div class ="text-format">
+				<div class="text-spacer">
+					<p class="text-content">Paragraph Text</p>
+				</div>
+				<div class="text-spacer">
+					<p class="explanation-text">1rem</p>
+				</div>
+				<div class="text-spacer">
+					<p class="explanation-text">Normal</p>
+				</div>
+				<div class="text-spacer">
+					<p class="explanation-text">p</p>
+				</div>
+				<div class="text-spacer">
+					<p class="explanation-text"><code>&lt;p&gt;Paragraph Text&lt;/p&gt;</code></p>
+				</div>
+			</div>
+      </section>
+
+      <!-- Reference from: https://www.w3schools.com/html/html_lists.asp -->
+      <section>
+        <h2>Bulleted Lists</h2>
+
+        <div class="text-spacer">
+        <h3>Rendered Element:</h3>
+        <ul>
+			<li>Loot Crate</li>
+			<li>Anime Crate</li>
+			<li>NatureBox</li>
+		</ul>
+		</div>
+
+        <div class="text-spacer">
+        <h3>CSS Selector:</h3>
+        <p>ul</p>
+        </div>
+
+        <div class="text-spacer-code">
+        <h3>Sample Code:</h3>
+        <code>&lt;ul&gt;&lt;li&gt;Loot Crate&lt;/li&gt;&lt;li&gt;Anime Crate&lt;/li&gt;&lt;li&gt;NatureBox&lt;/li&gt;&lt;/ul&gt;</code>
+        </div>
+
+      </section>
+
+      <!-- Reference from: https://www.w3schools.com/html/html_lists.asp -->
+      <section>
+        <h2>Numbered Lists</h2>
+
+        <div class="text-spacer">
+        <h3>Rendered Element:</h3>
+        <ol>
+			<li>Loot Crate</li>
+			<li>Anime Crate</li>
+			<li>NatureBox</li>
+		</ol>
+		</div>
+
+        <div class="text-spacer">
+        <h3>CSS Selector:</h3>
+        <p>ol</p>
+        </div>
+
+        <div class="text-spacer-code">
+        <h3>Sample Code:</h3>
+        <code>&lt;ol&gt;&lt;li&gt;Loot Crate&lt;/li&gt;&lt;li&gt;Anime Crate&lt;/li&gt;&lt;li&gt;NatureBox&lt;/li&gt;&lt;/ol&gt;</code>
+        </div>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+
+        <div class="text-spacer-large">
+        <h3>Rendered Element:</h3>
+	        <div class="main-nav-container">
+	        	<nav>
+	        	<h1>
+	        	<a href="index.html" class="main-nav-header">CRATE LIST</a>
+	        	<a href="subscriptions.html" class="main-nav-header">SUBSCRIPTIONS</a>
+	        	<a href="community.html" class="main-nav-header">COMMUNITY</a>
+	        	</h1>
+	        	</nav>
+	        </div>
+		</div>
+
+        <div class="text-spacer-medium">
+        <h3>CSS Selector:</h3>
+        <p>.main-nav-container, .main-nav-header</p>
+        </div>
+
+        <div class="text-spacer-code">
+        <h3>Sample Code:</h3>
+        <code>
+        	&lt;div class="main-nav-container"&gt;
+	        	&lt;nav&gt;
+	        	&lt;h1&gt;
+	        	&lt;a href="index.html" class="main-nav-header"&gt;CRATE LIST&lt;/a&gt;
+	        	&lt;a href="subscriptions.html" class="main-nav-header"&gt;SUBSCRIPTIONS&lt;/a&gt;
+	        	&lt;a href="community.html" class="main-nav-header"&gt;COMMUNITY&lt;/a&gt;
+	        	&lt;/h1&gt;
+	        	&lt;/nav&gt;
+	        &lt;/div&gt;
+	    </code>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+
+        <div class="text-spacer-large">
+        <h3>Rendered Element:</h3>
+	        <img src="img/lootcrate.jpg" alt="loot crate" height="400" width="600">
+	        <div class="text-spacer-medium">
+	        	<h1>Product Name</h1>
+	        	<p>Product description or information goes here</p>
+	        	<div class="bottom-align">
+	        		<h3>Product price goes here</h3>
+	        		<a href="#" class="basic-button">Add To Cart</a>
+	        	</div>
+	        </div>
+		</div>
+
+        <div class="text-spacer-medium">
+        <h3>CSS Selector:</h3>
+        <p>.text-spacer-medium, .bottom-align, .basic-button</p>
+        </div>
+
+        <div class="text-spacer-code">
+        <h3>Sample Code:</h3>
+        <code>
+        	&lt;img src="img/lootcrate.jpg" alt="loot crate" height="400" width="600"&gt;
+        	&lt;div class="text-spacer-medium"&gt;
+	        	&lt;h1&gt;Product Name&lt;/h1&gt;
+	        	&lt;p&gt;Product description or information goes here&lt;/p&gt;
+	        	&lt;div class="bottom-align"&gt;
+	        		&lt;h3&gt;Product price goes here&lt;/h3&gt;
+	        		&lt;a href="#" class="basic-button"&gt;Add To Cart&lt;/a&gt;
+	        	&lt;/div&gt;
+	        &lt;/div&gt;
+	    </code>
+        </div>
+
+      </section>
+
+    </section>
+
+    <section>
+        <h2>Website Grid Structure</h2>
+        <h3>Two Column Grid</h3>
+        <div class ="text-format">
+				<div class="text-spacer-medium">
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				</div>
+				<div class="text-spacer-medium">
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				</div>
+		</div>
+		<br>
+
+		<h3>Three Column Grid</h3>
+        <div class ="text-format">
+				<div class="text-spacer-small">
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				</div>
+				<div class="text-spacer-small">
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				</div>
+				<div class="text-spacer-small">
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				</div>
+		</div>
+
+      </section>
+
+      <section>
+        <h2>Website Colour Swatches</h2>
+        <img src="img/color-palette.png" alt="color palette">   	
+
+      </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+  </body>
+</html>

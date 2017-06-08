@@ -1,0 +1,194 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0;
+}
+
+form {
+	margin-bottom: 2rem;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.main-nav-header-example {
+	color: white;
+	padding: 1rem;
+	text-decoration: none;
+	background-size: 50px 100px;
+	background-image: url("../img/Dark-Wood-Panels.jpg");
+}
+
+.main-nav-header-example:hover, .main-nav-header-example:focus {
+	text-decoration: underline;
+}
+
+.basic-button {
+	color: white;
+	background-color: #d2722d;
+	padding: 1rem 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+}
+
+.basic-button:hover, .basic-button:focus {
+	background-color: #af5c20;
+} 
+
+.basic-button2 {
+	color: white;
+	background-color: #464646;
+	padding: 1rem 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+}
+
+.basic-button2:hover, .basic-button2:focus {
+	background-color: black;
+} 
+
+
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+body {
+	margin: 1rem;
+	font-family: "Arial", arial, serif;
+}
+
+h1 {
+	font-family: "Arial", arial, serif;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+h2 {
+	font-family: "Arial", helvetica, serif;
+	font-weight: normal;
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-family: "Arial", helvetica, serif;
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+h4 {
+	font-family: "Arial", arial, serif;
+	font-weight: bold;
+}
+
+p {
+	font-family: "Arial", arial, serif;
+	font-weight: normal;
+}
+
+.explanation-text {
+	color: grey;
+	display: inline;
+}
+
+.text-content {
+	color: black;
+	display: inline;
+}
+
+.wireframe {
+	margin: 1rem;
+}
+
+.text-spacer {
+	vertical-align: top;
+	display: inline-block;
+	width: 18%;
+}
+
+.text-spacer-small {
+	vertical-align: top;
+	display: inline-block;
+	width: 32%;
+}
+
+.text-spacer-medium {
+	vertical-align: top;
+	display: inline-block;
+	width: 48%;
+}
+
+.text-spacer-code {
+	vertical-align: top;
+	display: inline-block;
+	width: 60%;
+}
+
+
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+.text-spacer-large {
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+.text-spacer-image {
+	vertical-align: top;
+	display: inline;
+	width: 100%;
+	position: relative;
+}
+
+.main-nav-container {
+	background-size: 500px 100px;
+	background-image: url("../img/Dark-Wood-Panels.jpg");
+	padding: 1rem;
+	text-align: center;
+}
+
+.main-nav-header {
+	margin-left: 5rem;
+	color: white;
+	text-decoration: none;
+}
+
+.main-nav-header:hover, .main-nav-header:focus {
+	text-decoration: underline;
+}
+
+.bottom-align {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 1.5rem;
+}
