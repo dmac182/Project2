@@ -23,14 +23,6 @@
 }
 
 
-/*
-	Because our navigation is now fixed and overlaps our content, we need to introduce some space at the top of our page to ensure that overlap doesn't occur. The simplest solution to this is to introduce 'padding-top' to the body element so all the content has some additional spacing (thereby avoiding the overlap).
-*/
-body {
-	padding-top: 6rem;
-}
-
-
 
 @media (min-width: 48.75em) {
 
@@ -44,13 +36,6 @@ body {
 
 	.grid-col-1of4 {
 		width: 50%;
-	}
-
-	/*
-		Using the same selector in the media queries, we can adjust the padding-top for the body tag as the page resizes.
-	*/
-	body {
-		padding-top: 2rem;
 	}
 
 }
@@ -72,13 +57,33 @@ body {
 		width: 25%;
 	}
 
-	/*
-		Using the same selector in the media queries, we can adjust the padding-top for the body tag as the page resizes.
-	*/
-	body {
-		padding-top: 0.25rem;
-	}
+}
 
+.caption-inside {
+	position: relative;
+}
+
+.caption-inside figcaption {
+
+	/*
+		Positioning an element as 'absolute' sets it to be positioned absolutely to the last parent element with a positioning set (other then static).
+
+		As <figcaption> is the child of .caption-inside, which is positioned relative, <figcaption> is then positioned absolutely to .caption-inside based on the top, right, bottom, and left values set.
+	*/
+	position: absolute;
+
+	/*
+		By setting a bottom value of 0.5rem, we are introducing a bit of space between the bottom edge of the caption and the image.
+	*/
+	bottom: 0.5rem;
+
+	padding: 0 0.25em;
+	
+	/*
+		To help ensure that the content in our caption is readable, we can use a black background with some opacity and white text to increase the contrast.
+	*/
+	color: white;
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
 

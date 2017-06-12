@@ -7,6 +7,7 @@
 
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/grids.css" rel="stylesheet">
 		
 	</head>
 
@@ -15,17 +16,78 @@
 			<div class="header-container">
 				<div class="main-nav-container">
 	        	<nav>
-		        	<h1>
+		        	<h1 class="header-links">
 		        	<a href="index.html" class="main-nav-header">CRATE LIST</a>
 		        	<a href="subscriptions.html" class="main-nav-header">SUBSCRIPTIONS</a>
 		        	<a href="community.html" class="main-nav-header">COMMUNITY</a>
 		        	</h1>
 	        	</nav>
+	        	</div>
 	        </div>
-			</div>
 
 			<div class="body-container">
-				<h1>Test</h1>
+				<div class="grid-row">
+
+			      <section id="robot" class="grid-col-2of3">
+			      
+			        <h2>See a Robot</h2>
+
+			        <div class="grid-row">
+			      
+			          <div class="grid-col-1of2">
+
+			            <!--
+			              Note that we have added a class of 'caption-inside' to our figure tag to alter how the caption appears on this element.
+			            -->
+			            <figure class="caption-inside">
+
+			              <img src="img/gaming_example.jpg" alt="A toy robot with a menacing expression">
+			              <figcaption>Beware of robots like this.</figcaption>
+
+			            </figure>
+
+			          </div>
+
+			          <div class="grid-col-1of2">
+
+			            <h3>Links about robots:</h3>
+			            <ol>
+			            
+			              <li>
+			                <a href="https://en.wikipedia.org/wiki/Robot" target="_blank">Wikipedia on Robots</a>
+			              </li>
+			              <li>
+			                <a href="https://www.shutterstock.com/search/robots?search_source=base_keyword" target="_blank">Photos of robots</a>
+			              </li>
+			            </ol>
+
+			            <h3>The code of how robots deal with humans:</h3>
+
+			            <code>
+			              # Human protocol<br>
+			              robot.see("human", function(seen) {<br>
+			              seen.destroy();<br>
+			              });<br>
+			            </code>
+
+			            <h3>What the robot does as a result:</h3>
+
+			            <samp>EXTERMINATE! EXTERMINATE! EXTERMINATE!</samp>
+
+			          </div>
+
+			        </div>
+
+			      </section>
+
+			      <section id="comments" class="grid-col-1of3">
+
+			        <h2>Comment on Robots</h2>
+			        <p><strong>Commenting is currently closed.</strong></p>
+
+			      </section>
+
+			    </div>
 			</div>
 
 			<div class="footer-container">
