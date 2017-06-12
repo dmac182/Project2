@@ -41,15 +41,18 @@
 }
 
 .cate-image {
-	margin: auto;
+	
+	position: relative;
 }
 
 .cate-header {
 	font-size: 2rem;
 	font-weight: bold;
+	position: relative;
 }
 
 .cate-sub-header {
 	font-size: 1.75rem;
 	font-weight: normal;
+	position: relative;
 }
