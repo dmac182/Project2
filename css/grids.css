@@ -12,6 +12,10 @@
 	width: 100%;
 }
 
+.grid-col-1of2-category, .grid-col-1of4-category, .grid-col-1of3-category, .grid-col-2of3-category {
+	width: 33.333%;
+}
+
 .grid-row::after {
 	content: "";
 	display: block;

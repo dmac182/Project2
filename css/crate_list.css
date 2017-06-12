@@ -1,0 +1,12 @@
+/*
+  STYLING FOR THE CRATE LIST PAGES
+  Default styling for crate list page elements 
+*/
+
+.category-container {
+	margin-top: 2rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: column;
+}
