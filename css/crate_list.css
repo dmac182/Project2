@@ -3,6 +3,11 @@
   Default styling for crate list page elements 
 */
 
+.body-container {
+	position: relative;
+	height: 100%;
+}
+
 .category-container {
 	margin-top: 2rem;
 	display: inline-flex;
@@ -12,9 +17,12 @@
 	position: relative;
 }
 
-/*@media screen and (min-width: 40.5em) {
-	img {
-		width: 100%;
-		float: left;
-	}
-}*/
+.footer-container {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+/* keeping footer at bottom of page learned from: 
+http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page; */
