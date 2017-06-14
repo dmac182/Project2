@@ -8,19 +8,44 @@ img {
 	max-width: 66%;
 }
 
+.img-home {
+	height: auto; 
+	max-width: 100%;
+}
+
+.img-featured {
+	height: auto; 
+	max-width: 100%;
+}
+
 .img-banner {
-	height: 10rem;
+	height: 15rem;
 	width: 100%;
 	max-width: 100%;
 }
 
-.about-container {
-	margin-top: 2rem;
+.feature-container-text {
+	margin-left: 2rem;
 }
 
-.page-container {
-	min-height: 100%;
-  	position: relative;
+.about-container {
+	margin-top: 2rem;
+	background-color: white;
+}
+
+.about-container-text {
+	margin-left: 2rem;
+}
+
+@media (min-width: 73em) {
+	.img-home {
+		height: auto; 
+		max-width: 90%;
+	}
+
+	.feature-container-text {
+		margin-left: 0;
+	}
 }
 
 /*
@@ -47,6 +72,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    width: 80%;
 }
 
 .header-links {
@@ -78,11 +104,16 @@ img {
 }
 
 /*Body styling elements*/
+.page-container {
+	min-height: 100%;
+  	position: relative;
+}
+
 .body-container {
-	height: 100rem;
-	padding: 0 10% 10% 10%;
+	height: 100%;
+	padding: 0 10%;
 	margin-top: 5rem; /*Height of the header*/
-	padding-bottom: 20rem; /*Height of the footer*/
+	padding-bottom: 15rem; /*Height of the footer*/
 	background-color: orange;
 }
 
@@ -97,10 +128,7 @@ img {
 	width: 100%;
 	background-color: grey;
 }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
