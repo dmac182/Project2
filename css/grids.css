@@ -1,101 +1,98 @@
-*, *::after, *::before {
-	box-sizing: border-box;
-}
-
-[class^='grid-col-'] {
-	float: left;
-	padding: 0; 
-	
-}
-
-.grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3 {
-	width: 100%;
-}
-/* changed value from 33.333 to 100 for mobile friendly ui */
-.grid-col-1of2-category, .grid-col-1of4-category, .grid-col-1of3-category, .grid-col-2of3-category {
-	width: 100%;
-}
-
-.grid-row::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-.grid-col-1of4 {
-	width: 100%;
-}
-
-/* keeps cratelist page items at displaying 3 per row */
-@media (min-width: 73em) {
-	.grid-col-1of3-category {
-		width: 33.333%;
-	}
-}
-
-
-
-@media (min-width: 48.75em) {
-
-	.grid-col-1of2 {
-		width: 50%;
-	}
-
-	.grid-col-1of2:last-of-type {
-
-	}
-
-	.grid-col-1of4 {
-		width: 50%;
-	}
-}
-
-
-
-@media (min-width: 73em) {
-
-	.grid-col-2of3 {
-		width: 66.666%;
-	}
-
-	.grid-col-1of3 {
-		width: 33.333%;
-	}
-
-	.grid-col-1of4 {
-		width: 25%;
-	}
-
-}
-
-.caption-inside {
-	position: relative;
-}
-
-.caption-inside figcaption {
-
-	/*
-		Positioning an element as 'absolute' sets it to be positioned absolutely to the last parent element with a positioning set (other then static).
-
-		As <figcaption> is the child of .caption-inside, which is positioned relative, <figcaption> is then positioned absolutely to .caption-inside based on the top, right, bottom, and left values set.
-	*/
-	position: absolute;
-
-	/*
-		By setting a bottom value of 0.5rem, we are introducing a bit of space between the bottom edge of the caption and the image.
-	*/
-	bottom: 0.5rem;
-
-	padding: 0 0.25em;
-	
-	/*
-		To help ensure that the content in our caption is readable, we can use a black background with some opacity and white text to increase the contrast.
-	*/
-	color: white;
-	background-color: rgba(0, 0, 0, 0.9);
-}
-
-
-
-
-
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+[class^='grid-col-'] {
+	float: left;
+	padding: 0; 
+	
+}
+
+.grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3, .grid-col-full {
+	width: 100%;
+}
+/* changed value from 33.333 to 100 for mobile friendly ui */
+.grid-col-1of2-category, .grid-col-1of4-category, .grid-col-1of3-category, .grid-col-2of3-category {
+	width: 100%;
+}
+
+.grid-row::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/* keeps cratelist page items at displaying 3 per row */
+@media (min-width: 73em) {
+	.grid-col-1of3-category {
+		width: 33.333%;
+	}
+}
+
+
+
+@media (min-width: 48.75em) {
+
+	.grid-col-1of2 {
+		width: 50%;
+	}
+
+	.grid-col-1of2:last-of-type {
+
+	}
+
+	.grid-col-1of4 {
+		width: 50%;
+	}
+}
+
+
+
+@media (min-width: 73em) {
+
+	.grid-col-2of3 {
+		width: 66.666%;
+	}
+
+	.grid-col-1of3 {
+		width: 33.333%;
+	}
+
+	.grid-col-1of4 {
+		width: 25%;
+	}
+
+}
+
+.caption-inside {
+	position: relative;
+}
+
+.caption-inside figcaption {
+
+	/*
+		Positioning an element as 'absolute' sets it to be positioned absolutely to the last parent element with a positioning set (other then static).
+
+		As <figcaption> is the child of .caption-inside, which is positioned relative, <figcaption> is then positioned absolutely to .caption-inside based on the top, right, bottom, and left values set.
+	*/
+	position: absolute;
+
+	/*
+		By setting a bottom value of 0.5rem, we are introducing a bit of space between the bottom edge of the caption and the image.
+	*/
+	bottom: 0.5rem;
+
+	padding: 0 0.25em;
+	
+	/*
+		To help ensure that the content in our caption is readable, we can use a black background with some opacity and white text to increase the contrast.
+	*/
+	color: white;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+
+

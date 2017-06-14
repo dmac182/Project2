@@ -8,6 +8,16 @@ img {
 	max-width: 66%;
 }
 
+.img-banner {
+	height: 10rem;
+	width: 100%;
+	max-width: 100%;
+}
+
+.about-container {
+	margin-top: 2rem;
+}
+
 .page-container {
 	min-height: 100%;
   	position: relative;
