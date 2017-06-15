@@ -1,0 +1,43 @@
+			            	.drop-btn {
+			            		background-color: white;
+			            		padding: 16px;
+			            		font-size: 16px;
+			            		border: none;
+			            		cursor: pointer;
+			            	}
+
+			            	.drop-btn:hover, .drop-btn:focus {
+			            		background-color: #3e8e41;
+			            	}
+
+			            	.drop-down {
+			            		position: relative;
+			            		display: inline-block;
+			            	}
+
+			            	.dropdown-content {
+			            		display: none;
+			            		position: absolute;
+			            		background-color: #f6f6f6;
+			            		min-width: 230px;
+			            		overflow: auto;
+			            		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			            		z-index: 1;
+			            	}
+
+			            	.dropdown-content a {
+			            		color: black;
+			            		padding: 12px 16px;
+			            		text-decoration: none;
+			            		display: block;
+			            	}
+
+			            	.drop-down a:hover {
+			            		background-color: #ddd;
+			            	}
+
+			            	.show {
+			            		display: block;
+			            	}
+
+			            	/* drop down menu code based on several examples from: https://www.w3schools.com/howto/howto_js_dropdown.asp; */
