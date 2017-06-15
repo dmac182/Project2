@@ -8,19 +8,44 @@ img {
 	max-width: 66%;
 }
 
+.img-home {
+	height: auto; 
+	max-width: 100%;
+}
+
+.img-featured {
+	height: auto; 
+	max-width: 100%;
+}
+
 .img-banner {
-	height: 10rem;
+	height: 15rem;
 	width: 100%;
 	max-width: 100%;
 }
 
-.about-container {
-	margin-top: 2rem;
+.feature-container-text {
+	margin-left: 2rem;
 }
 
-.page-container {
-	min-height: 100%;
-  	position: relative;
+.about-container {
+	margin-top: 2rem;
+	background-color: white;
+}
+
+.about-container-text {
+	margin-left: 2rem;
+}
+
+@media (min-width: 73em) {
+	.img-home {
+		height: auto; 
+		max-width: 90%;
+	}
+
+	.feature-container-text {
+		margin-left: 0;
+	}
 }
 
 /*
@@ -47,6 +72,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    width: 80%;
 }
 
 .header-links {
@@ -56,7 +82,6 @@ img {
 
 .main-nav-header {
 	position: relative;
-	top: 10%;
 	margin-left: 5rem;
 	color: white;
 	text-decoration: none;
@@ -78,12 +103,17 @@ img {
 }
 
 /*Body styling elements*/
+.page-container {
+	min-height: 100%;
+  	position: relative;
+}
+
 .body-container {
-	height: 100rem;
-	padding: 0 10% 10% 10%;
+	height: 100%;
+	padding: 0 10%;
 	margin-top: 5rem; /*Height of the header*/
-	padding-bottom: 20rem; /*Height of the footer*/
-	background-color: orange;
+	padding-bottom: 10rem; /*Height of the footer*/
+	background-color: #6c614f;
 }
 
 /*
@@ -93,14 +123,43 @@ img {
 .footer-container {
 	position: absolute;
 	bottom: 0;
-	height: 10rem; /*Height of the footer*/
+	height: 5rem; /*Height of the footer*/
 	width: 100%;
 	background-color: grey;
 }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
+.main-footer-nav-container {
+	width:100%;
+	text-align: center;
+}
+
+.footer-content-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.footer-content {
+	margin-top: 1.5rem;
+}
+
+.footer-text {
+	position: relative;
+	color: white;
+	text-decoration: none;
+	margin-right: 0.5rem;
+	vertical-align: middle;
+	display: inline;
+}
+
+.footer-icon {
+	height: 2rem;
+	width: 2rem;
+	margin: 0 0.5rem;
+	vertical-align: middle;
+}
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -110,7 +169,7 @@ img {
 	color: white;
 	padding: 1rem;
 	text-decoration: none;
-	background-size: 50px 100px;
+	background-size: 30px 30px;
 	background-image: url("../img/Dark-Wood-Panels.jpg");
 }
 
