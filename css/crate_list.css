@@ -10,10 +10,11 @@
 
 .category-container {
 	margin-top: 2rem;
-	display: inline-flex;
+	display: inline-block;
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	text-align: center;
 }
 
 /* keeping footer at bottom of page learned from: 
