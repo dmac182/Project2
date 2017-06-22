@@ -7,14 +7,15 @@
 	position: relative;
 }
 
+/*
+Images for the Geek/Gaming category: http://boxes.mysubscriptionaddiction.com/subscription_boxes_for/geek
+*/
+
 .category-container {
 	margin-top: 2rem;
-	display: inline-block;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 	text-align: center;
+	text-decoration: none;
 }
-
-/* keeping footer at bottom of page learned from: 
-http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page; */

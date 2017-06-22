@@ -3,9 +3,14 @@
   Default styling for home page elements 
 */
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 img {
 	height: auto; 
-	max-width: 66%;
+	max-width: 100%;
 }
 
 .img-home {
@@ -21,6 +26,11 @@ img {
 .img-banner {
 	height: 15rem;
 	width: 100%;
+	max-width: 100%;
+}
+
+.img-category {
+	height: 15rem; 
 	max-width: 100%;
 }
 
@@ -150,10 +160,13 @@ img {
 	position: relative;
 	color: white;
 	text-decoration: none;
-	margin-right: 0.5rem;
 	vertical-align: middle;
 	display: inline;
 }
+
+/*
+Footer social media badges: https://www.iconfinder.com/iconsets/free-social-media-set
+*/
 
 .footer-icon {
 	height: 2rem;
