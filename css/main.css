@@ -5,7 +5,6 @@
 
 a {
 	text-decoration: none;
-	color: white;
 }
 
 img {
@@ -23,24 +22,47 @@ img {
 	max-width: 100%;
 }
 
-.img-banner {
-	height: 15rem;
+.banner-container {
+	height: 30rem;
 	width: 100%;
 	max-width: 100%;
+	background-image: url("../img/banner.jpg");
+	background-size: cover;
 }
 
-.img-category {
-	height: 15rem; 
-	max-width: 100%;
+.banner-info-container {
+	position: relative;
+	background-color: rgba(30,30,30,.9);
+	height: 70%;
+	width: 40%;
+	top: 15%;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 2%;
 }
+
+.banner-spacer {
+	margin-bottom: 13%;
+}
+
+/*Banner-Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/packaging.jpg?resize=815%2C489&ssl=1*/
 
 .feature-container-text {
-	margin-left: 2rem;
+	margin: 0 13rem;
 }
 
 .about-container {
 	margin-top: 2rem;
 	background-color: white;
+}
+
+.about-image {
+	height: 15rem;
+	width: 100%;
+	background-image: url("../img/banner.jpg");
+	background-size: cover;
 }
 
 .about-container-text {
@@ -49,14 +71,18 @@ img {
 }
 
 @media (min-width: 73em) {
-	.img-home {
-		height: auto; 
-		max-width: 90%;
-	}
 
 	.feature-container-text {
-		margin-left: 0;
+		margin: 0 7rem;
 	}
+}
+
+.home-product-container {
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	position: relative;
 }
 
 /*
@@ -88,7 +114,7 @@ img {
 
 .header-links {
 	margin: 0;
-	padding-top: 1.5rem;
+	padding-top: 1.2rem;
 }
 
 .main-nav-header {
@@ -113,6 +139,7 @@ img {
 	text-decoration: underline;
 }
 
+
 /*Body styling elements*/
 .page-container {
 	min-height: 100%;
@@ -122,22 +149,27 @@ img {
 
 .body-container {
 	height: 100%;
-	padding: 0 10%;
 	margin-top: 5rem; /*Height of the header*/
 	padding-bottom: 10rem; /*Height of the footer*/
-	background-color: #6c614f;
+	background-color: #1e1e1e;
 }
+
+.wrapper {
+	padding: 0 10%;
+}
+
 
 /*
   Footer styling elements
-  Reference for locked to bottom footer: http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page		
+  Reference for locked to bottom footer: http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page
+  Footer social media badges: https://www.iconfinder.com/iconsets/free-social-media-set	
 */
 .footer-container {
 	position: absolute;
 	bottom: 0;
 	height: 5rem; /*Height of the footer*/
 	width: 100%;
-	background-color: grey;
+	background-color: black;
 }
 
 .main-footer-nav-container {
@@ -164,16 +196,16 @@ img {
 	display: inline;
 }
 
-/*
-Footer social media badges: https://www.iconfinder.com/iconsets/free-social-media-set
-*/
-
 .footer-icon {
 	height: 2rem;
 	width: 2rem;
 	margin: 0 0.5rem;
 	vertical-align: middle;
 }
+
+/*
+StyleGuide Styling
+*/
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -200,6 +232,7 @@ Footer social media badges: https://www.iconfinder.com/iconsets/free-social-medi
 	text-decoration: none;
 	-webkit-transition: background-color 0.5s ease-out;
   	transition: background-color 0.5s ease-out;
+  	border-radius: 7px;
 }
 
 .basic-button:hover, .basic-button:focus {
@@ -227,34 +260,35 @@ Footer social media badges: https://www.iconfinder.com/iconsets/free-social-medi
   TEXT ELEMENTS -------------------
 */
 body {
-	font-family: "Arial", arial, serif;
+	font-family: "Arial", arial, sans-serif;
 }
 
 h1 {
-	font-family: "Arial", arial, serif;
-	font-weight: bold;
+	font-family: "Impact", arial, sans-serif;
+	font-weight: normal;
 	font-size: 2rem;
 }
 
 h2 {
-	font-family: "Arial", helvetica, serif;
-	font-weight: normal;
+	font-family: "Arial", arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
 	font-size: 1.75rem;
 }
 
 h3 {
-	font-family: "Arial", helvetica, serif;
+	font-family: "Arial", arial, sans-serif;
 	font-weight: bold;
-	font-size: 1.25rem;
+	font-size: 1.35rem;
 }
 
 h4 {
-	font-family: "Arial", arial, serif;
+	font-family: "Arial", arial, sans-serif;
 	font-weight: bold;
 }
 
 p {
-	font-family: "Arial", arial, serif;
+	font-family: "Arial", arial, sans-serif;
 	font-weight: normal;
 }
 
