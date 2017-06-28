@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Crate Service Details</title>
+		<title>Loot Crate Product Details</title>
 
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
@@ -14,105 +14,147 @@
 
 	<body>
 		<div class="page-container">
+
+			<!-- Scrolling Page Header -->
+			<section id="header">
 			<div class="header-container">
 				<div class="main-nav-container">
 				<div class="header-link-container">
 		        	<nav>
-			        	<h2 class="header-links">
+			        	<h1 class="header-links">
 			        	<a href="index.html" class="main-nav-header-left">HOME</a>
 			        	<a href="crate_list.html" class="main-nav-header">CRATE LIST</a>
-			        	<a href="community.html" class="main-nav-header">COMMUNITY</a>
-			        	</h2>
+			        	</h1>
 		        	</nav>
 		        </div>
 	        	</div>
 	        </div>
+	        </section>
 
 			<div class="body-container">
 
-			<!-- ONLY EDIT STUFF BELOW HERE -->
+			<div class="wrapper">
 
-			<!-- seperate row for title of page -->
 				<div class="grid-row">
 
-			     <section id="product-title" class="grid-col-2of3">
-			      
-			        <h2>Crate Service</h2>
+			      <section id="main-product-image">
+			      		<div class="grid-col-1of2 loot-info-left-container">
 
-			        <div class="grid-row">
+			              <img src="img/loot_crate.jpg" alt="Loot Crate image">
 
-			            <!-- Image with displayed caption based on class example -->
-			            <figure class="caption-inside">
+			        		<div class="column-container-text">
+						    	<p>Here is a description of the featured product and why you should order it becuase ordering our crates is the best idea.</p>
+						    </div>
+						</div>
 
-			              <img src="img/gaming_example.jpg" alt="A toy robot with a menacing expression">
-			              <figcaption>This month's theme is hero.</figcaption>
-			            </figure>
-			        </div>
 			      </section>
 
-			     <div class="grid-row">
+			      <section id="featured-product">
+			      	<div class="grid-col-1of2 loot-info-right-container">
+			      		<h2>LOOT CRATE</h2>
 
-			    <section id="product-details" class="grid-col-2of3">
+			      		<!-- drop down form for selecting between 4 subscription plans based on exmaple from: http://www.echoecho.com/htmlforms11.htm -->
+			      		<div class="subscription-container">
+				        	<h3 class="dropdown-text">Subscription Plans:</h3>
 
-			          <h3>Subscription Plans:</h3>
+				        	<form class="dropdown-form">
+				        		<select class="dropdown-box-subscription">
+				        			<option value="one-month">1 Month - $15</option>
+				        			<option value="three-month">3 Month - $40</option>
+				        			<option value="six-month">6 Month - $75</option>
+				        			<option value="one-year">12 Month - $140</option>
+				        		</select>
+				        	</form>
+				        </div>
 
-			        <!-- drop down form for selecting between 3 subscription plans based on exmaple from: http://www.echoecho.com/htmlforms11.htm -->
+				        <div class="tshirt-container">
+				        	<h3 class="dropdown-text">T-Shirt Sizes:</h3>
 
-			        <div class="grid-row">
+				        	<form class="dropdown-form-extra">
+				        		<select class="dropdown-box-tshirt">
+				        			<option value="one-month">Mens - Small</option>
+				        			<option value="three-month">Mens - Medium</option>
+				        			<option value="six-month">Mens - Large</option>
+				        			<option value="one-year">Mens - Extra Large</option>
+				        			<option value="one-month">Womens - Small</option>
+				        			<option value="three-month">Womens - Medium</option>
+				        			<option value="six-month">Womens - Large</option>
+				        			<option value="one-year">Womens - Extra Large</option>
+				        		</select>
+				        	</form>
+				        </div>
 
-			        	<form class="sub-form">
-			        		<select class="sub-drop-down">
-			        			<option value="one-month">1 Month</option>
-			        			<option value="three-month">3 Month</option>
-			        			<option value="six-month">6 Month</option>
-			        			<option value="one-year">12 Month</option>
-			        		</select>
-			        	</form>
-			    
-			    	<!-- list displaying description of crate service -->
-			            <h3>Features:</h3>
+				        <div class="purchase-container">
+				        	<h3 class="dropdown-text">Confirm Purchase:</h3>
+				        	<div class="cart-button">
+				        		<a href="checkout.html" class="basic-button">Add To Cart</a>
+				        	</div>
+				        </div>
+				    
+				    	<!-- list displaying description of crate service -->
+				            <h3>Loot Crate Features:</h3>
 
-			            	<ul>
-			            		<li>4-6 Items from the Best Game Series</li>
-			            		<li>Over $60+ in Retail Value</li>
-			            		<li>Licensed, Exclusive Gaming Gear</li>
-			            	</ul>
+				            	<ul>
+				            		<li>4-6 Items from the Best Game Series</li>
+				            		<li>Over $60+ in Retail Value</li>
+				            		<li>Licensed, Exclusive Gaming Gear</li>
+				            	</ul>
 
-			            <p>Every month we send these types of items to your door once a month.</p>
+				            <p>Every month we send these types of items to your door once a month.</p>
 
-			         </div>
+				    </div>
 
-			        <div class="grid-row">
-			      		<form>Leave Feedback on this Service:<br><input type="text" name="user_feedback"></form>
-			      		<br>
-			        	<a href="#" class="basic-button2">Reset</a><a href="#" class="basic-button">Submit</a> 
-			      	</div>
+			      </section>
 
-			      	<div class="grid-row">
-			      	  	<h3>Add Crate Service to Cart</h3>
-			        	<a href="checkout.html" class="basic-button">Cart</a>
-			        </div>
-			    </section>
+			    </div>
 
-			  </div>
+			    <div class="grid-row product-images-container">
+					<h3 class="product-image-text">Examples of what can be found in this crate!</h3>
+					<img class="product-image" src="img/banner.jpg" alt="New product image">
+					<img class="product-image" src="img/banner.jpg" alt="New product image">
+				</div>
+
+				<div class="grid-row product-feedback-container">
+					<div class="feedback-container">
+						<p>Have any feedback for this product? Let us know!</p>
+						<textarea class="form-box" placeholder="Enter your feeback here..."></textarea>
+
+						<div class="response-buttons">
+							<a href="#" class="basic-button">Submit</a> <a href="#" class="basic-button2">Reset</a>
+						</div>
+					</div>
+				</div>
+			</div>
 			</div>
 
-			<!-- ONLY EDIT STUFF ABOVE HERE -->
-
+			<!-- Locked Bottom Footer -->
+			<section id="footer">
 			<div class="footer-container">
 				<div class="main-footer-nav-container">
 				<div class="footer-content-container">
 			        <div class="footer-content">
-			        	<h2 class="footer-text">Follow Us: </h2>
-			        	<img class="footer-icon" src="img/gaming_example.jpg" alt="Contact Icons">
-			        	<img class="footer-icon" src="img/gaming_example.jpg" alt="Contact Icons">
-			        	<img class="footer-icon" src="img/gaming_example.jpg" alt="Contact Icons">
-			        	<img class="footer-icon" src="img/gaming_example.jpg" alt="Contact Icons">
-			        	<img class="footer-icon" src="img/gaming_example.jpg" alt="Contact Icons">
+			        	<h3 class="footer-text">Follow Us: </h3>
+			        	<a href="https://www.gmail.com">
+			        	<img class="footer-icon" src="img/email.png" alt="Contact Icons"></a>
+
+			  			<a href="https://www.facebook.com">
+			        	<img class="footer-icon" src="img/facebook.png" alt="Contact Icons"></a>
+
+			        	<a href="https://www.twitter.com">
+			        	<img class="footer-icon" src="img/twitter.png" alt="Contact Icons"></a>
+
+			        	<a href="https://www.youtube.com">
+			        	<img class="footer-icon" src="img/youtube.png" alt="Contact Icons"></a>
+
+			        	<a href="https://www.snapchat.com">
+			        	<img class="footer-icon" src="img/snapchat.png" alt="Contact Icons"></a>
 			        </div>
 		        </div>
 	        	</div>
 			</div>
+			</section>
 		</div>
+
 	</body>
+
 </html>
