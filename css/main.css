@@ -47,10 +47,27 @@ img {
 	margin-bottom: 13%;
 }
 
-/*Banner-Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/packaging.jpg?resize=815%2C489&ssl=1*/
+.home-product-container {
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	position: relative;
+}
 
-.feature-container-text {
+.home-product-image {
+	height: 20rem;
+}
+
+.column-container-text {
 	margin: 0 13rem;
+}
+
+@media (min-width: 73em) {
+
+	.column-container-text {
+		margin: 0 7rem;
+	}
 }
 
 .about-container {
@@ -58,6 +75,7 @@ img {
 	background-color: white;
 }
 
+/*Banner-Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/packaging.jpg?resize=815%2C489&ssl=1*/
 .about-image {
 	height: 15rem;
 	width: 100%;
@@ -68,21 +86,6 @@ img {
 .about-container-text {
 	margin-left: 2rem;
 	color: black;
-}
-
-@media (min-width: 73em) {
-
-	.feature-container-text {
-		margin: 0 7rem;
-	}
-}
-
-.home-product-container {
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	text-align: center;
-	position: relative;
 }
 
 /*
@@ -247,10 +250,11 @@ StyleGuide Styling
 	text-decoration: none;
 	-webkit-transition: background-color 0.5s ease-out;
   	transition: background-color 0.5s ease-out;
+  	border-radius: 7px;
 }
 
 .basic-button2:hover, .basic-button2:focus {
-	background-color: black;
+	background-color: #1e1e1e;
 } 
 
 

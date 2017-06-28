@@ -14,7 +14,7 @@
 
 }
 
-.grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3, .grid-col-full {
+.grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3, .grid-col-1of2-alt {
 
 	width: 100%;
 
@@ -85,7 +85,7 @@
 
 	}
 
-	.grid-col-full {
+	.grid-col-1of2-alt {
 
 		width: 50%;
 
