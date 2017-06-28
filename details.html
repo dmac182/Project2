@@ -31,78 +31,76 @@
 			<div class="body-container">
 
 			<!-- ONLY EDIT STUFF BELOW HERE -->
+
+			<!-- seperate row for title of page -->
 				<div class="grid-row">
 
-			      <section id="product-details" class="grid-col-2of3">
+			     <section id="product-title" class="grid-col-2of3">
 			      
 			        <h2>Crate Service</h2>
 
 			        <div class="grid-row">
 
-			            <!--
-			              Note that we have added a class of 'caption-inside' to our figure tag to alter how the caption appears on this element.
-			            -->
+			            <!-- Image with displayed caption based on class example -->
 			            <figure class="caption-inside">
 
 			              <img src="img/gaming_example.jpg" alt="A toy robot with a menacing expression">
 			              <figcaption>This month's theme is hero.</figcaption>
-
 			            </figure>
-
-			          <div class="grid-col-1of2">
-
-			            <h3>Subscription Plans:</h3>
-
-			            <div class="drop-down">
-			            	<button onclick="myFunction()" class="drop-btn">Select Subscription Plan</button>
-			            	<div id="mydropdown" class="dropdown-content">
-			            		<a href="#1-month">1 - Month: $9.99</a>
-			            		<a href="#3-month">3 - Month: $19.99</a>
-			            		<a href="#1-year">1 - Year: $49.99</a>
-			            	</div>
-			            </div>
-
-			        <!-- java scrip code from: https://www.w3schools.com/howto/howto_js_dropdown.asp; -->
-			            <script type="text/javascript">
-			            	function myFunction() {
-			            		document.getElementById("mydropdown").classList.toggle("show");
-			            	}
-
-			            	window.onclick=function(e) {
-			            		if (!e.target.matches('.drop-btn')) {
-			            			var MyDropDown = document.getElementById("mydropdown");
-			            			if (MyDropDown.classList.contains('show')) {
-			            				MyDropDown.classList.remove('show');
-			            			}
-			            		}
-			            	}
-			            </script>
-			    
-			            <h3>About this Crate Service:</h3>
-
-			            <p>Everyone month we send these types of items to your door once a month.</p>
-			          </div>
 			        </div>
-
-			      <section id="feedback" class="grid-col-1of3">
-			      	<form>Leave Feedback on this Service:<br><input type="text" name="user_feedback"></form>
-			      	<br>
-			        <a href="#" class="basic-button2">Reset</a><a href="#" class="basic-button">Submit</a> 
-			      </section>
 			      </section>
 
-			      <section id="cart" class="grid-col-1of3">
-			        <h2>Add Crate Service to Cart</h2>
-			        <a href="checkout.html" class="basic-button">Cart</a>
-			      </section>
+			     <div class="grid-row">
 
-			    </div>
+			    <section id="product-details" class="grid-col-2of3">
+
+			          <h3>Subscription Plans:</h3>
+
+			        <!-- drop down form for selecting between 3 subscription plans based on exmaple from: http://www.echoecho.com/htmlforms11.htm -->
+
+			        <div class="grid-row">
+
+			        	<form class="sub-form">
+			        		<select class="sub-drop-down">
+			        			<option value="one-month">1 Month</option>
+			        			<option value="three-month">3 Month</option>
+			        			<option value="six-month">6 Month</option>
+			        			<option value="one-year">12 Month</option>
+			        		</select>
+			        	</form>
+			    
+			    	<!-- list displaying description of crate service -->
+			            <h3>Features:</h3>
+
+			            	<ul>
+			            		<li>4-6 Items from the Best Game Series</li>
+			            		<li>Over $60+ in Retail Value</li>
+			            		<li>Licensed, Exclusive Gaming Gear</li>
+			            	</ul>
+
+			            <p>Every month we send these types of items to your door once a month.</p>
+
+			         </div>
+
+			        <div class="grid-row">
+			      		<form>Leave Feedback on this Service:<br><input type="text" name="user_feedback"></form>
+			      		<br>
+			        	<a href="#" class="basic-button2">Reset</a><a href="#" class="basic-button">Submit</a> 
+			      	</div>
+
+			      	<div class="grid-row">
+			      	  	<h3>Add Crate Service to Cart</h3>
+			        	<a href="checkout.html" class="basic-button">Cart</a>
+			        </div>
+			    </section>
+
+			  </div>
 			</div>
 
 			<!-- ONLY EDIT STUFF ABOVE HERE -->
 
 			<div class="footer-container">
-								<div class="main-footer-nav-container">
+				<div class="main-footer-nav-container">
 				<div class="footer-content-container">
 			        <div class="footer-content">
 			        	<h2 class="footer-text">Follow Us: </h2>

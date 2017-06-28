@@ -1,43 +1,135 @@
-			            	.drop-btn {
-			            		background-color: white;
-			            		padding: 16px;
-			            		font-size: 16px;
-			            		border: none;
-			            		cursor: pointer;
-			            	}
+/* Basic Styling */
+/* based on tutorial from: https://designmodo.com/create-product-page/ */
 
-			            	.drop-btn:hover, .drop-btn:focus {
-			            		background-color: #3e8e41;
-			            	}
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+ 
+.container {
+	display: flex;
+}
 
-			            	.drop-down {
-			            		position: relative;
-			            		display: inline-block;
-			            	}
+.show {
+	display: block;
+}
 
-			            	.dropdown-content {
-			            		display: none;
-			            		position: absolute;
-			            		background-color: #f6f6f6;
-			            		min-width: 230px;
-			            		overflow: auto;
-			            		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-			            		z-index: 1;
-			            	}
+/* Columns */
+.left-column {
+  width: 65%;
+  margin-top: 60px;
+  position: relative;
+}
+ 
+.right-column {
+  width: 35%;
+  margin-top: 60px;
+}
 
-			            	.dropdown-content a {
-			            		color: black;
-			            		padding: 12px 16px;
-			            		text-decoration: none;
-			            		display: block;
-			            	}
+/* Left Column */
+.left-column img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
-			            	.drop-down a:hover {
-			            		background-color: #ddd;
-			            	}
+.plan-select {
+	align-content: center;
+}
 
-			            	.show {
-			            		display: block;
-			            	}
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 12px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+ 
+.plan-config {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+ 
+.plan-config a {
+  color: #358ED7;
+  text-decoration: none;
+  font-size: 12px;
+  position: relative;
+  margin: 10px 0;
+  display: inline-block;
+}
+.plan-config a:before {
+  content: "?";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(53, 142, 215, 0.5);
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  opacity: 0.5;
+  margin-right: 5px;
+}
 
-			            	/* drop down menu code based on several examples from: https://www.w3schools.com/howto/howto_js_dropdown.asp; */
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
+}
+ 
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 20px;
+}
+ 
+
+/* Responsive adjustment to screen size change */
+@media (max-width: 940px) {
+  .container {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+ 
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+ 
+  .left-column img {
+    width: 300px;
+    right: 0;
+    top: -45px;
+    left: initial;
+  }
+}
+ 
+@media (max-width: 535px) {
+  .left-column img {
+    width: 220px;
+    top: -85px;
+  }
+}
+
+.footer-container {
+	width: 100%;
+}
+
