@@ -36,26 +36,27 @@
 			<div class="wrapper">
 
 				<div class="grid-row">
-
+				  <!-- Left side column with crate image and descriptive text -->
 			      <section id="main-product-image">
 			      		<div class="grid-col-1of2 loot-info-left-container">
 
 			              <img src="img/loot_crate.jpg" alt="Loot Crate image">
 
-			        		<div class="column-container-text">
-						    	<p>Here is a description of the featured product and why you should order it becuase ordering our crates is the best idea.</p>
+			        		<div>
+						    	<p>Every month a different theme is chosen for your Loot Crate which is delivered right to your door.</p>
 						    </div>
 						</div>
 
 			      </section>
 
-			      <section id="featured-product">
+			      <!-- Right side column with ordering dropdowns and product features -->
+			      <section id="product-ordering">
 			      	<div class="grid-col-1of2 loot-info-right-container">
 			      		<h2>LOOT CRATE</h2>
 
-			      		<!-- drop down form for selecting between 4 subscription plans based on exmaple from: http://www.echoecho.com/htmlforms11.htm -->
+			      		<!-- Subscription plan order dropdown based on example from: http://www.echoecho.com/htmlforms11.htm -->
 			      		<div class="subscription-container">
-				        	<h3 class="dropdown-text">Subscription Plans:</h3>
+				        	<h3 class="dropdown-text">Subscription Plan:</h3>
 
 				        	<form class="dropdown-form">
 				        		<select class="dropdown-box-subscription">
@@ -67,8 +68,9 @@
 				        	</form>
 				        </div>
 
+				        <!-- T-shirt order dropdown -->
 				        <div class="tshirt-container">
-				        	<h3 class="dropdown-text">T-Shirt Sizes:</h3>
+				        	<h3 class="dropdown-text">T-Shirt Size:</h3>
 
 				        	<form class="dropdown-form-extra">
 				        		<select class="dropdown-box-tshirt">
@@ -80,10 +82,11 @@
 				        			<option value="three-month">Womens - Medium</option>
 				        			<option value="six-month">Womens - Large</option>
 				        			<option value="one-year">Womens - Extra Large</option>
-				        		</select>
+				        		</select
 				        	</form>
 				        </div>
 
+				        <!-- Purchase button -->
 				        <div class="purchase-container">
 				        	<h3 class="dropdown-text">Confirm Purchase:</h3>
 				        	<div class="cart-button">
@@ -91,16 +94,14 @@
 				        	</div>
 				        </div>
 				    
-				    	<!-- list displaying description of crate service -->
-				            <h3>Loot Crate Features:</h3>
+				   		<!-- List displaying description of crate service -->
+				        <h3>Loot Crate Features:</h3>
 
-				            	<ul>
-				            		<li>4-6 Items from the Best Game Series</li>
-				            		<li>Over $60+ in Retail Value</li>
-				            		<li>Licensed, Exclusive Gaming Gear</li>
-				            	</ul>
-
-				            <p>Every month we send these types of items to your door once a month.</p>
+				        <ul>
+				           <li>4 - 6 pop culture items every month!</li>
+				           <li>Over $45+ in retail value of collectible iems!</li>
+				           <li>Licensed, exclusive items you can't get anywhere else!</li>
+				        </ul>
 
 				    </div>
 
@@ -108,22 +109,31 @@
 
 			    </div>
 
-			    <div class="grid-row product-images-container">
-					<h3 class="product-image-text">Examples of what can be found in this crate!</h3>
-					<img class="product-image" src="img/banner.jpg" alt="New product image">
-					<img class="product-image" src="img/banner.jpg" alt="New product image">
-				</div>
+			    <!-- Product example images -->
+			    <section id="product-example-images">
+				    <div class="grid-row product-images-container">
+						<h3 class="product-image-text">Examples of what can be found in this crate every month!</h3>
+						<img class="product-image" src="img/loot_crate1.jpg" alt="Loot Crate examples">
+						<img class="product-image" src="img/loot_crate2.jpg" alt="Loot Crate examples">
+						<img class="product-image" src="img/loot_crate3.jpg" alt="Loot Crate examples">
+						<img class="product-image" src="img/loot_crate4.jpg" alt="Loot Crate examples">
+					</div>
+				</section>
 
-				<div class="grid-row product-feedback-container">
-					<div class="feedback-container">
-						<p>Have any feedback for this product? Let us know!</p>
-						<textarea class="form-box" placeholder="Enter your feeback here..."></textarea>
+				<!-- Product feedback form and buttons -->
+				<section id="product-feedback-form">
+					<div class="grid-row product-feedback-container">
+						<div class="feedback-container">
+							<p>Have any feedback for this product? Let us know!</p>
+							<textarea class="form-box" placeholder="Enter your feeback here..."></textarea>
 
-						<div class="response-buttons">
-							<a href="#" class="basic-button">Submit</a> <a href="#" class="basic-button2">Reset</a>
+							<div class="response-buttons">
+								<a href="#" class="basic-button">Submit</a> <a href="details.html" class="basic-button2">Reset</a>
+							</div>
 						</div>
 					</div>
-				</div>
+				</section>
+
 			</div>
 			</div>
 
