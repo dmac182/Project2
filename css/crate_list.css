@@ -19,7 +19,7 @@ Images for the Pop Culture/Gaming category (Loot Crate, Geek Fuel, Loot Anime, C
 
 .category-title-container {
 	text-align: center;
-	margin: 1rem 0;
+	margin-top: 1rem;
 }
 
 .category-title-text {
@@ -47,6 +47,7 @@ Images for the Pop Culture/Gaming category (Loot Crate, Geek Fuel, Loot Anime, C
 }
 
 .category-container {
+	margin-top: 2rem;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -59,4 +60,8 @@ Images for the Pop Culture/Gaming category (Loot Crate, Geek Fuel, Loot Anime, C
 
 .category-container:hover, .category-container:focus {
 	color: #d2722d;
+}
+
+.category-spacer {
+	margin: 0 1rem;
 }
