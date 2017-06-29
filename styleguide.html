@@ -10,6 +10,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/details.css" rel="stylesheet">
     <link href="css/crate_list.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
 
   </head>
 
@@ -23,7 +24,6 @@
       <p>
         Overall Navigation: 
         <a href="styleguide.html">Style Guide</a>,
-        <a href="wireframes.html">Wireframes</a>,
         <a href="citations.html">Citations</a>
       </p>
 
@@ -56,7 +56,7 @@
         <div class="text-spacer">
         <h3>Rendered Element:</h3>
         <a href="index.html" class="main-nav-header-example">CRATE LIST</a>
-		</div>
+		    </div>
 
         <div class="text-spacer">
         <h3>CSS Selector:</h3>
@@ -70,28 +70,7 @@
 
       </section>
 
-     <!-- In-text link example -->
-      <section>
-        <h2>In-text link</h2>
-
-        <div class="text-spacer">
-        <h3>Rendered Element:</h3>
-        Click here to go to the <a href="index.html">Home Page</a>, it's great!
-		</div>
-
-        <div class="text-spacer">
-        <h3>CSS Selector:</h3>
-        <p>a href</p>
-        </div>
-
-        <div class="text-spacer-code">
-        <h3>Sample Code:</h3>
-        <code>Click here to go to the &lt;a href="index.html"&gt;CRATE LIST&lt;/a&gt;, it's great!</code>
-        </div>
-
-      </section>
-
-     <!-- Text Inout Field Example -->
+     <!-- Text Input Field Example -->
       <section>
         <h2>Text Input Field</h2>
         <div class="text-spacer">
@@ -122,7 +101,7 @@
      <!-- Button Examples -->
       <section>
       <!--Forms Reference https://www.w3schools.com/html/html_forms.asp -->
-        <h2>Submit/Reset Buttons</h2>
+        <h2>Confirm/Cancel Buttons</h2>
 
         <div class="text-spacer">
         <h3>Rendered Element:</h3>
@@ -193,7 +172,7 @@
 					<h1 class="explanation-text">2rem</h1>
 				</div>
 				<div class="text-spacer">
-					<h1 class="explanation-text">Bold</h1>
+					<h1 class="explanation-text">Normal</h1>
 				</div>
 				<div class="text-spacer">
 					<h1 class="explanation-text">h1</h1>
@@ -212,7 +191,7 @@
 					<h2 class="explanation-text">1.75rem</h2>
 				</div>
 				<div class="text-spacer">
-					<h2 class="explanation-text">Normal</h2>
+					<h2 class="explanation-text">Bold</h2>
 				</div>
 				<div class="text-spacer">
 					<h2 class="explanation-text">h2</h2>
@@ -228,7 +207,7 @@
 					<h3 class="text-content">Section Header</h3>
 				</div>
 				<div class="text-spacer">
-					<h3 class="explanation-text">1.25rem</h3>
+					<h3 class="explanation-text">1.35rem</h3>
 				</div>
 				<div class="text-spacer">
 					<h3 class="explanation-text">Bold</h3>
@@ -359,7 +338,7 @@
 	        		</div>
 	        	</nav>
 	        </div>
-		</div>
+		    </div>
 
         <div class="text-spacer-medium">
         <h3>CSS Selector:</h3>
@@ -426,15 +405,80 @@
 
         <div class="text-spacer-large">
         <h3>Rendered Element:</h3>
-	        <img src="img/food_example.jpg" alt="loot crate" height="400" width="600">
-	        <div class="text-spacer-medium">
-	        	<h1>Product Name</h1>
-	        	<p>Product description or information goes here</p>
-	        	<div class="bottom-align">
-	        		<h3>Product price goes here</h3>
-	        		<a href="#" class="basic-button">Add To Cart</a>
-	        	</div>
-	        </div>
+
+	        <div class="grid-row">
+          <!-- Left side column with crate image and descriptive text -->
+            <section id="main-product-image">
+                <div class="grid-col-1of2 loot-info-left-container">
+
+                    <img src="img/loot_crate.jpg" alt="Loot Crate image">
+
+                  <div>
+                  <p>Every month a different theme is chosen for your Loot Crate which is delivered right to your door.</p>
+                </div>
+            </div>
+
+            </section>
+
+            <!-- Right side column with ordering dropdowns and product features -->
+            <section id="product-ordering">
+              <div class="grid-col-1of2 loot-info-right-container">
+                <h2>LOOT CRATE</h2>
+
+                <!-- Subscription plan order dropdown based on example from: http://www.echoecho.com/htmlforms11.htm -->
+                <div class="subscription-container">
+                  <h3 class="dropdown-text">Subscription Plan:</h3>
+
+                  <form class="dropdown-form">
+                    <select class="dropdown-box-subscription">
+                      <option value="one-month">1 Month - $15</option>
+                      <option value="three-month">3 Month - $40</option>
+                      <option value="six-month">6 Month - $75</option>
+                      <option value="one-year">12 Month - $140</option>
+                    </select>
+                  </form>
+                </div>
+
+                <!-- T-shirt order dropdown -->
+                <div class="tshirt-container">
+                  <h3 class="dropdown-text">T-Shirt Size:</h3>
+
+                  <form class="dropdown-form-extra">
+                    <select class="dropdown-box-tshirt">
+                      <option value="one-month">Mens - Small</option>
+                      <option value="three-month">Mens - Medium</option>
+                      <option value="six-month">Mens - Large</option>
+                      <option value="one-year">Mens - Extra Large</option>
+                      <option value="one-month">Womens - Small</option>
+                      <option value="three-month">Womens - Medium</option>
+                      <option value="six-month">Womens - Large</option>
+                      <option value="one-year">Womens - Extra Large</option>
+                    </select
+                  </form>
+                </div>
+
+                <!-- Purchase button -->
+                <div class="purchase-container">
+                  <h3 class="dropdown-text">Confirm Purchase:</h3>
+                  <div class="cart-button">
+                    <a href="checkout.html" class="basic-button">Add To Cart</a>
+                  </div>
+                </div>
+            
+              <!-- List displaying description of crate service -->
+                <h3>Loot Crate Features:</h3>
+
+                <ul>
+                   <li>4 - 6 pop culture items every month!</li>
+                   <li>Over $45+ in retail value of collectible iems!</li>
+                   <li>Licensed, exclusive items you can't get anywhere else!</li>
+                </ul>
+
+            </div>
+
+            </section>
+
+          </div>
 		</div>
 
         <div class="text-spacer-medium">
