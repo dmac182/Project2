@@ -413,7 +413,7 @@
 
                     <img src="img/loot_crate.jpg" alt="Loot Crate image">
 
-                  <div>
+                <div>
                   <p>Every month a different theme is chosen for your Loot Crate which is delivered right to your door.</p>
                 </div>
             </div>
@@ -453,7 +453,7 @@
                       <option value="three-month">Womens - Medium</option>
                       <option value="six-month">Womens - Large</option>
                       <option value="one-year">Womens - Extra Large</option>
-                    </select
+                    </select>
                   </form>
                 </div>
 
@@ -470,7 +470,7 @@
 
                 <ul>
                    <li>4 - 6 pop culture items every month!</li>
-                   <li>Over $45+ in retail value of collectible iems!</li>
+                   <li>Over $45+ in retail value of collectible items!</li>
                    <li>Licensed, exclusive items you can't get anywhere else!</li>
                 </ul>
 
@@ -489,15 +489,72 @@
         <div class="text-spacer-code">
         <h3>Sample Code:</h3>
         <code>
-        	&lt;img src="img/lootcrate.jpg" alt="loot crate" height="400" width="600"&gt;
-        	&lt;div class="text-spacer-medium"&gt;
-	        	&lt;h1&gt;Product Name&lt;/h1&gt;
-	        	&lt;p&gt;Product description or information goes here&lt;/p&gt;
-	        	&lt;div class="bottom-align"&gt;
-	        		&lt;h3&gt;Product price goes here&lt;/h3&gt;
-	        		&lt;a href="#" class="basic-button"&gt;Add To Cart&lt;/a&gt;
-	        	&lt;/div&gt;
-	        &lt;/div&gt;
+
+        	&lt;section id="main-product-image"&gt;
+                &lt;div class="grid-col-1of2 loot-info-left-container"&gt;
+
+                    &lt;img src="img/loot_crate.jpg" alt="Loot Crate image"&gt;
+
+                &lt;div&gt;
+                  &lt;p&gt;Every month a different theme is chosen for your Loot Crate which is delivered right to your door.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;/section&gt;
+
+            &lt;section id="product-ordering"&gt;
+              &lt;div class="grid-col-1of2 loot-info-right-container"&gt;
+                &lt;h2&gt;LOOT CRATE&lt;/h2&gt;
+
+                &lt;div class="subscription-container"&gt;
+                  &lt;h3 class="dropdown-text"&gt;Subscription Plan:&lt;/h3&gt;
+
+                  &lt;form class="dropdown-form"&gt;
+                    &lt;select class="dropdown-box-subscription"&gt;
+                      &lt;option value="one-month"&gt;1 Month - $15&lt;/option&gt;
+                      &lt;option value="three-month"&gt;3 Month - $40&lt;/option&gt;
+                      &lt;option value="six-month"&gt;6 Month - $75&lt;/option&gt;
+                      &lt;option value="one-year"&gt;12 Month - $140&lt;/option&gt;
+                    &lt;/select&gt;
+                  &lt;/form&gt;
+                &lt;/div&gt;
+
+                &lt;div class="tshirt-container"&gt;
+                  &lt;h3 class="dropdown-text"&gt;T-Shirt Size:&lt;/h3&gt;
+
+                  &lt;form class="dropdown-form-extra"&gt;
+                    &lt;select class="dropdown-box-tshirt"&gt;
+                      &lt;option value="one-month"&gt;Mens - Small&lt;/option&gt;
+                      &lt;option value="three-month"&gt;Mens - Medium&lt;/option&gt;
+                      &lt;option value="six-month"&gt;Mens - Large&lt;/option&gt;
+                      &lt;option value="one-year"&gt;Mens - Extra Large&lt;/option&gt;
+                      &lt;option value="one-month"&gt;Womens - Small&lt;/option&gt;
+                      &lt;option value="three-month"&gt;Womens - Medium&lt;/option&gt;
+                      &lt;option value="six-month"&gt;Womens - Large&lt;/option&gt;
+                      &lt;option value="one-year"&gt;Womens - Extra Large&lt;/option&gt;
+                    &lt;/select&gt;
+                  &lt;/form&gt;
+                &lt;/div&gt;
+
+                &lt;div class="purchase-container"&gt;
+                  &lt;h3 class="dropdown-text"&gt;Confirm Purchase:&lt;/h3&gt;
+                  &lt;div class="cart-button"&gt;
+                    &lt;a href="checkout.html" class="basic-button"&gt;Add To Cart&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+            
+                &lt;h3&gt;Loot Crate Features:&lt;/h3&gt;
+
+                &lt;ul&gt;
+                   &lt;li&gt;4 - 6 pop culture items every month!&lt;/li&gt;
+                   &lt;li&gt;Over $45+ in retail value of collectible items!&lt;/li&gt;
+                   &lt;li&gt;Licensed, exclusive items you can't get anywhere else!&lt;/li&gt;
+                &lt;/ul&gt;
+
+            &lt;/div&gt;
+
+            &lt;/section&gt;
+        
 	    </code>
         </div>
 
@@ -543,6 +600,7 @@
       		<div class="main-footer-nav-container">
       		<div class="footer-content-container">
       			<div class="footer-content">
+      				<div class="footer-fix">
       					<h3 class="footer-text">Follow Us: </h3>
 			        	<a href="#gmail">
 			        	<img class="footer-icon" src="img/email.png" alt="Contact Icons"></a>
@@ -558,6 +616,7 @@
 
 			        	<a href="#snapchat">
 			        	<img class="footer-icon" src="img/snapchat.png" alt="Contact Icons"></a>
+			        </div>
       			</div>
       		</div>
       		</div>
@@ -592,6 +651,64 @@
       			&lt;/div&gt;
       		&lt;/div&gt;
       		&lt;/div&gt;
+      	</code> 
+      	</div>
+      </section>
+
+
+      <!-- About Website Example -->
+      <section>
+      	<h2>About Us Information</h2>
+      	<div class="text-spacer-large">
+      	<h3>Rendered Elements:</h3>
+
+		<section id="company-information">
+			<div class="grid-row about-container">
+
+				<div class="grid-col-1of2-alt">
+					<div class="about-image-container">
+						<div class="about-image"></div>
+					</div>
+				</div>
+
+				<div class="grid-col-1of2-alt">
+					<div class="about-container-text">
+						<h3>About CRATE Crate</h3>
+						<p>CRATE Crate is a monthly subscription service that provides you with all of the items that you want, directly to your door. If you're tired of subscribing to multiple crate delivservices, try using CRATE Crate!</p>
+						<p> We'll take items from each crate that you put in your order, and combine them into one mega CRATE which we ship directly to you. Now you can get all of your favourite montsubscription items with less hassle and for a lower cost!</p>
+						<p>Featuring crate services such as Loot Crate, Loot Anime, NatureBox, Graze, Birchbox, Harry's, Dollar Shave Club, and many more, we're sure to have everything that you'll need!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+      	<div class="text-spacer-medium">
+      	<h3>CSS Selector:</h3>
+      	<p>.grid-row about-container, .about-image-container, .about-container-text</p>
+      	</div>
+
+      	<div class="text-spacer-code">
+      	<h3>Sample Code:</h3>
+      	<code>
+		&lt;section id="company-information"&gt;
+			&lt;div class="grid-row about-container"&gt;
+
+				&lt;div class="grid-col-1of2-alt"&gt;
+					&lt;div class="about-image-container"&gt;
+						&lt;div class="about-image"&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="grid-col-1of2-alt"&gt;
+					&lt;div class="about-container-text"&gt;
+						&lt;h3&gt;About CRATE Crate&lt;/h3&gt;
+						&lt;p&gt;CRATE Crate is a monthly subscription service that provides you with all of the items that you want, directly to your door. If you're tired of subscribing to multiple crate delivservices, try using CRATE Crate!&lt;/p&gt;
+						&lt;p&gt; We'll take items from each crate that you put in your order, and combine them into one mega CRATE which we ship directly to you. Now you can get all of your favourite montsubscription items with less hassle and for a lower cost!&lt;/p&gt;
+						&lt;p&gt;Featuring crate services such as Loot Crate, Loot Anime, NatureBox, Graze, Birchbox, Harry's, Dollar Shave Club, and many more, we're sure to have everything that you'll need!&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/section&gt;
       	</code> 
       	</div>
       </section>
