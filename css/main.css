@@ -77,7 +77,12 @@ Banner Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/pac
 	display: block;
 }
 
+.top-fix {
+	padding-top: 0.3rem;
+}
+
 .about-container {
+	position: relative;
 	margin-top: 2rem;
 	background-color: white;
 }
@@ -91,6 +96,7 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 	background-image: url("../img/about-banner.png");
 	background-size: 100% 100%;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .about-container-text {
