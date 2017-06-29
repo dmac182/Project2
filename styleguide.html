@@ -7,13 +7,15 @@
     <title>CRATE Crate Style Guide</title>
 
     <link href="css/styleguide.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/details.css" rel="stylesheet">
 
   </head>
 
   <body>
 
     <h1>CRATE Crate Style Guide</h1>
-    <h3>Created by Kevin Lamprecht</h3>
+    <h3>Created by Kevin Lamprecht, Darren MacPhail</h3>
 
     <nav>
       
@@ -46,6 +48,8 @@
       <!-- Default Button styling section -->
       <section>
 
+      <!-- Navigation Bar Button Example -->
+
         <h2>Navigation Button</h2>
 
         <div class="text-spacer">
@@ -65,17 +69,18 @@
 
       </section>
 
+     <!-- In-text link example -->
       <section>
         <h2>In-text link</h2>
 
         <div class="text-spacer">
         <h3>Rendered Element:</h3>
-        Click here to go to the <a href="index.html">CRATE LIST</a>, it's great!
+        Click here to go to the <a href="index.html">Home Page</a>, it's great!
 		</div>
 
         <div class="text-spacer">
         <h3>CSS Selector:</h3>
-        <p>a</p>
+        <p>a href</p>
         </div>
 
         <div class="text-spacer-code">
@@ -85,51 +90,48 @@
 
       </section>
 
+     <!-- Text Inout Field Example -->
       <section>
         <h2>Text Input Field</h2>
         <div class="text-spacer">
         <h3>Rendered Element:</h3>
-        <form>
-			Product Name:<br>
-			<input type="text" name="productname"><br>
-			Price:<br>
-			<input type="text" name="price">
-		</form>
+			<div class="feedback-container">
+				<p>Have any feedback for this product? Let us know!</p>
+				<textarea class="form-box" placeholder="Enter your feeback here..."></textarea>
+			</div>
 		</div>
 
         <div class="text-spacer">
         <h3>CSS Selector:</h3>
-        <p>form</p>
+        <p>.feedback-container, .form-box</p>
         </div>
 
         <div class="text-spacer-code">
         <h3>Sample Code:</h3>
         <code>
-        	&lt;form&gt;
-				Product Name:&lt;br&gt;
-				&lt;input type="text" name="productname"&gt;&lt;br&gt;
-				Price:&lt;br&gt;
-				&lt;input type="text" name="price"&gt;
-			&lt;/form&gt;
+        	&lt;div class="feedback-container"&gt;
+				&lt;p&gt;Have any feedback for this product? Let us know!&lt;/p&gt;
+				&lt;textarea class="form-box" placeholder="Enter your feedback here..."&gt;&lt;textarea&gt;
+			&lt;/div&gt;
         </code>
         </div>
         
       </section>
 
+     <!-- Button Examples -->
       <section>
       <!--Forms Reference https://www.w3schools.com/html/html_forms.asp -->
         <h2>Submit/Reset Buttons</h2>
 
         <div class="text-spacer">
         <h3>Rendered Element:</h3>
-        <form>
-			Product Name:<br>
-			<input type="text" name="productname"><br>
-			Price:<br>
-			<input type="text" name="price">
-		</form>
-        <a href="#" class="basic-button">Submit</a>
-        <a href="#" class="basic-button2">Reset</a>
+			<div class="feedback-container">
+				<p>Have any feedback for this product? Let us know!</p>
+				<textarea class="form-box" placeholder="Enter your feeback here..."></textarea>
+			</div>
+		
+        	<a href="#" class="basic-button">Submit</a>
+        	<a href="#" class="basic-button2">Reset</a>
 		</div>
 
         <div class="text-spacer">
@@ -140,12 +142,11 @@
         <div class="text-spacer-code">
         <h3>Sample Code:</h3>
         <code>
-        	&lt;form&gt;
-				Product Name:&lt;br&gt;
+        	&lt;div class="feedback-container"&gt;
+				&lt;p&gt;Have any feedback for this product? Let us know!&lt;/p&gt;
 				&lt;input type="text" name="productname"&gt;&lt;br&gt;
-				Price:&lt;br&gt;
-				&lt;input type="text" name="price"&gt;
-			&lt;/form&gt;
+				&lt;textarea class="form-box" placeholder="Enter your feedback here..."&gt;&lt;textarea&gt;
+			&lt;/div&gt;
         	&lt;a href="#" class="basic-button"&gt;Submit&lt;/a&gt;
         	&lt;a href="#" class="basic-button2"&gt;Reset&lt;/a&gt;
         </code>
@@ -154,13 +155,14 @@
       </section>
 
     </section>
+
+
     <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
 
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
 
+    <!-- Text Heading Examples -->
       <section>
         <h2>Headings</h2>
         	<div class ="text-format">
@@ -240,6 +242,8 @@
 			<br>
       </section>
 
+     <!-- Paragraph Text Example -->
+
       <section>
         <h2>Paragraphs</h2>
         <div class ="text-format">
@@ -281,6 +285,8 @@
       </section>
 
       <!-- Reference from: https://www.w3schools.com/html/html_lists.asp -->
+
+      <!-- Bulleted and Numbered List Examples -->
       <section>
         <h2>Bulleted Lists</h2>
 
@@ -333,11 +339,10 @@
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
-
-
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
 
+    <!-- Navigation Bar Example -->
       <section>
         <h2>Main Navigation</h2>
 
@@ -346,9 +351,9 @@
 	        <div class="main-nav-container">
 	        	<nav>
 	        	<h1>
-	        	<a href="index.html" class="main-nav-header">CRATE LIST</a>
-	        	<a href="subscriptions.html" class="main-nav-header">SUBSCRIPTIONS</a>
-	        	<a href="community.html" class="main-nav-header">COMMUNITY</a>
+	        	<a href="#index" class="main-nav-header">CRATE LIST</a>
+	        	<a href="#crate_list" class="main-nav-header">SUBSCRIPTIONS</a>
+	        	<a href="#community" class="main-nav-header">COMMUNITY</a>
 	        	</h1>
 	        	</nav>
 	        </div>
@@ -365,9 +370,9 @@
         	&lt;div class="main-nav-container"&gt;
 	        	&lt;nav&gt;
 	        	&lt;h1&gt;
-	        	&lt;a href="index.html" class="main-nav-header"&gt;CRATE LIST&lt;/a&gt;
-	        	&lt;a href="subscriptions.html" class="main-nav-header"&gt;SUBSCRIPTIONS&lt;/a&gt;
-	        	&lt;a href="community.html" class="main-nav-header"&gt;COMMUNITY&lt;/a&gt;
+	        	&lt;a href="#index" class="main-nav-header"&gt;CRATE LIST&lt;/a&gt;
+	        	&lt;a href="#crate_list" class="main-nav-header"&gt;SUBSCRIPTIONS&lt;/a&gt;
+	        	&lt;a href="#community" class="main-nav-header"&gt;COMMUNITY&lt;/a&gt;
 	        	&lt;/h1&gt;
 	        	&lt;/nav&gt;
 	        &lt;/div&gt;
@@ -377,11 +382,53 @@
       </section>
 
       <section>
+      	<h2>Drop Menu Selection</h2>
+
+      	<div class="text-large">
+      	<h3>Rendered Element:</h3>
+      	
+			<form class="dropdown-form">
+				<select class="dropdown-box-subscription">
+				    <option value="one-month">1 Month - $15</option>
+				    <option value="three-month">3 Month - $40</option>
+				    <option value="six-month">6 Month - $75</option>
+				    <option value="one-year">12 Month - $140</option>
+				</select>
+			</form>
+		</div>
+
+
+		<div class="text-spacer-medium">
+        <h3>CSS Selector:</h3>
+        <p>.dropdown-form, .dropdown-box-subscription</p>
+        </div>
+
+        <div class="text-spacer-code">
+        <h3>Sample Code:</h3>
+        <code>
+        	&lt;form class="dropdown-form"&gt;
+	        	&lt;select class="dropdown-box-subscription"&gt;
+	        		&lt;option value="one-month"&gt;1 Month - $15&lt;/option&gt;
+	        		&lt;option value="three-month"&gt;3 Month - $40&lt;/option&gt;
+	        		&lt;option value="six-month"&gt;6 Month - $75&lt;/option&gt;
+	        		&lt;option value="one-year"&gt;12 Month - $140&lt;/option&gt;
+	        	&lt;/select&gt;
+	        &lt;/form&gt;
+	    </code>
+        </div>
+
+      </section>
+
+
+      				 
+
+     <!-- Example of Product Listing -->
+      <section>
         <h2>Product Listing</h2>
 
         <div class="text-spacer-large">
         <h3>Rendered Element:</h3>
-	        <img src="img/lootcrate.jpg" alt="loot crate" height="400" width="600">
+	        <img src="img/food_example.jpg" alt="loot crate" height="400" width="600">
 	        <div class="text-spacer-medium">
 	        	<h1>Product Name</h1>
 	        	<p>Product description or information goes here</p>
@@ -416,8 +463,12 @@
 
     </section>
 
+   <!-- Grid Structure Example -->
     <section>
         <h2>Website Grid Structure</h2>
+                		<div class="text-spacer-medium">
+        			<p>The website uses a combination of flexbox and a column system as a grid structure.</p>
+        		</div>
         <h3>Two Column Grid</h3>
         <div class ="text-format">
 				<div class="text-spacer-medium">
