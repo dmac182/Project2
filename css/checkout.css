@@ -14,6 +14,7 @@ T-Shirt Placeholder Image: http://pixel.nymag.com/imgs/fashion/daily/2016/04/28/
 .checkout-info-right-container {
   position: relative;
   margin-top: 0.5rem;
+  margin-bottom: 10rem;
 }
 
 @media (min-width: 73em) {
