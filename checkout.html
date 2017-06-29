@@ -8,6 +8,7 @@
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/grids.css" rel="stylesheet">
+		<link href="css/details.css" rel="stylesheet">
 		<link href="css/checkout.css" rel="stylesheet">
 		
 	</head>
@@ -38,44 +39,30 @@
 			<div class="wrapper">
 
 				<div class="grid-row">
+				<!-- Product Details regarding items in cart -->
+			      <section id="product-details">
+			      	<div class="grid-col-1of2 loot-info-left-container">
+			      		<div>
+			      			<h3>Items in Cart:</h3>
+			      		</div>
+			      		<img src="img/loot_crate.jpg" alt="Product in Cart">
+			      			<h3>Order Summary</h3>
+			      			<ul>
+				           		<li>Loot Crate: 1 Month Subscription: $15</li>
+				           		<li>Mens - Extra Large T-Shirt: Free</li>
+				        	</ul>
+				        	<div class="order-total">
+				        		<h3>Order Total: $15</h3>
+				        	</div>
+			      	</div>
+			      </section>
 
-			      <section id="product-details" class="grid-col-2of3">
+			      <section id="order-form">
+			      	<div class="grid-col-1of2 loot-info-right-container">
+			      		<h2>Payment Info</h2>
+			      		<p>Enter Credit Card Details to Complete your Order.</p>
 
-			     <!-- Title of Page -->
-			        <h2>Crate Service Added to Cart!</h2>
-
-			        <div class="grid-row">
-
-				<!-- Checkout Section Container -->
-			  <div class="checkout-panel">
-			  	<div class="panel-body">
-			  		<h2 class="title">Cart</h2>
-
-			  	<!-- Images for Payment Options -->
-			  		<div class="payment-method">
-			  			<label for="card" class="method-card">
-			  				<div class="card-logos">
-			  					<img src="">
-			  					<img src="">
-			  				</div>
-
-			  				<div class="radio-input">
-			  					<input id="card" type="radio" name="payment">
-			  					Pay $49.99 with credit card
-			  				</div>
-			  			</label>
-
-			  			<label for="paypal" class="method-paypal">
-			  				<img src="">
-			  				<div class="radio-input">
-			  					<input id="paypal" type="radio" name="payment">
-			  					Pay $49.99 with Paypal
-			  				</div>	
-			  			</label>
-			  		</div>
-
-			  	<!-- Text fields for payment information -->
-
+			      	<!-- Text fields for payment information -->
 			  		<div class="input-fields">
 			  			<div class="column-1">
 			  				<label for="cardholder">Cardholder's Name</label>
@@ -83,36 +70,39 @@
 
 			  					<div class="small-inputs">
 			  						<div>
-			  							<label for="date">Valid thru</label>
+			  							<label for="date">Valid Through</label>
 			  							<input type="text" id="date">
 			  						</div>
-
 			  					</div>
-			  					<div class="column-2">
-			  						<label for="cardnumber">Card Number</label>
-			  						<input type="password" id="cardnumber">
 
-			  						<span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card seperate from its number.</span>
+			  					<div class="small-inputs">
+			  						<div>
+			  							<label for="cardnumber">Card Number</label>
+			  							<input type="password" id="cardnumber">
+			  						</div>
 			  					</div>
 			  			</div>
 			  		</div>
-
-			  		<div class="panel-footer">
-			  			<a href="details.html" class="basic-button2">Back</a>
-			  			<a href="crate_list.html" class="basic-button">Add another Service</a>
-			  			<a href="receipt.html" class="basic-button">Next Step</a>
-			  		</div>
-			  	</div>
-			  </div>
-			      
-			    <!-- tutorial for checkout page: https://designmodo.com/checkout-form/ -->    
-			  	  
-			        </div>
-
+			      	</div>
 			      </section>
 
 
-			    </div>
+			      
+
+			   <div class="grid-row">
+
+				<!-- Checkout Section Container -->
+			  	<div class="panel-body">
+			  		<div class="panel-footer">
+			  			<a href="details.html" class="basic-button2">Back</a>
+			  			<a href="crate_list.html" class="basic-button">Add Another Service</a>
+			  			<a href="receipt.html" class="basic-button">Confirm Order</a>
+			  		</div>
+			  	</div>     
+			   </div>
+			  <!-- tutorial for checkout page: https://designmodo.com/checkout-form/ -->
+
+			  </div>
 			</div>
 			</div>
 
@@ -144,7 +134,5 @@
 			</section>
 			
 		</div>
-
 	</body>
-
 </html>
