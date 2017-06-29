@@ -22,7 +22,7 @@ Image for main Loot Crate Product Image: http://s3.amazonaws.com/digitaltrends-u
 @media (min-width: 73em) {
 
   .loot-info-right-container {
-    padding-left: 2rem;
+    padding-left: 2rem !important;
   }
 }
 
