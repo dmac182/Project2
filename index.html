@@ -20,10 +20,11 @@
 				<div class="main-nav-container">
 				<div class="header-link-container">
 		        	<nav>
-			        	<h1 class="header-links">
-			        	<a href="index.html" class="main-nav-header-left">HOME</a>
-			        	<a href="crate_list.html" class="main-nav-header">CRATE LIST</a>
-			        	</h1>
+			        	<div class="header-links">        	
+				        	<a href="index.html" class="main-nav-header-left"><img class="header-icon" src="img/crate_icon.png" alt="CRATE Crate Icon"></a>
+				        	<a href="crate_list.html" class="main-nav-header"><h1>CRATE LIST</h1></a>
+				        	<a href="checkout.html" class="main-nav-header"><h1>CART</h1></a>
+			        	</div>
 		        	</nav>
 		        </div>
 	        	</div>
@@ -32,43 +33,50 @@
 
 			<div class="body-container">
 
-			<div class="grid-row banner-container">
-				<div class="banner-info-container">
-					<h2>#1 crate compilation service</h2>
-					<h3 class="banner-spacer">Browse tons of different crates from all manner of different categories, and have them delivered straight to your door!</h3>
-					<a href="crate_list.html" class="basic-button">Browse the crates!</a>
-				</div>
-			</div>
+				<!-- Home page banner that displays basic info -->
+				<section id="home-banner">
+					<div class="grid-row banner-container">
+						<div class="banner-info-container">
+							<h2>#1 crate compilation service</h2>
+							<h3 class="banner-spacer">Browse tons of different crates from all manner of different categories, and have them delivered straight to your door!</h3>
+							<a href="crate_list.html" class="basic-button">Start Using CRATE Crate!</a>
+						</div>
+					</div>
+				</section>
 
 			<div class="wrapper">
 
 				<div class="grid-row">
 
+				  <!-- Newly arrived product image and information -->
 			      <section id="new-product">
 			      	<div class="grid-col-1of2 home-product-container">
 			      
 			        <h2>Newly Arrived!</h2>
 
-			            	<img class= "home-product-image" src="img/gaming_example.jpg" alt="New product image">
+			            	<img class= "home-product-image" src="img/gaming4.png" alt="New product image">
 
 			        		<div class="column-container-text">
-						    	<h3>New Product Name</h3>
-						    	<p>Here is a description of the featured product and why you should order it becuase ordering our crates is the best idea.</p>
+						    	<h3>Comic Block</h3>
+						    	<p>An assortment of comic books and comic-based paraphernalia! This new crate focuses exclusively on comics, specifically the Marvel and DC universes.</p>
+						    	<a href="crate_list.html" class="basic-button button-top-spacer">Get Comic Block</a>
 						    </div>
 					</div>
 
 			      </section>
 
+			      <!-- Featured product image and information -->
 			      <section id="featured-product">
 			      	<div class="grid-col-1of2 home-product-container">
 
 			        <h2>Featured Product!</h2>
 
-					        <img class= "home-product-image" src="img/food_example.jpg" alt="Featured product image">
+					        <img class= "home-product-image" src="img/gaming3.png" alt="Featured product image">
 
 			        		<div class="column-container-text">
-						    	<h3>Featured Product Name</h3>
-						    	<p>Here is a description of the featured product and why you should order it becuase ordering our crates is the best idea.</p>
+						    	<h3>Loot Anime</h3>
+						    	<p>A collection of anime memorabilia and figures! Featuring characters from all of your favourite anime like Bleach, Naruto, Zatch Bell and Berserk.</p>
+						    	<a href="crate_list.html" class="basic-button button-top-spacer">Get Loot Anime</a>
 						    </div>
 					</div>
 
@@ -76,18 +84,25 @@
 
 			    </div>
 
+			    <!-- Company information and "About Us" info -->
+			    <section id="company-information">
 			    <div class="grid-row about-container">
 
-					    <div class="grid-col-1of2-alt">
-					    	<div class="about-image"></div>
-					    </div>
-					    <div class="grid-col-1of2-alt">
-						    <div class="about-container-text">
-						    	<h3>About CRATE Crate</h3>
-						    	<p>What is CRATE Crate about? We're about everything and nothing. Riding the surf and delivering awesome products right to your door. Corporate marketing BS is great isn't it?</p>
-						    </div>
-					    </div>
+					<div class="grid-col-1of2-alt">
+						<div class="about-image"></div>
+					</div>
+
+					<div class="grid-col-1of2-alt">
+						<div class="about-container-text">
+							<h3>About CRATE Crate</h3>
+							<p>CRATE Crate is a monthly subscription service that provides you with all of the items that you want, directly to your door. If you're tired of subscribing to multiple crate delivservices, try using CRATE Crate!</p>
+							<p> We'll take items from each crate that you put in your order, and combine them into one mega CRATE which we ship directly to you. Now you can get all of your favourite montsubscription items with less hassle and for a lower cost!</p>
+							<p>Featuring crate services such as Loot Crate, Loot Anime, NatureBox, Graze, Birchbox, Harry's, Dollar Shave Club, and many more, we're sure to have everything that you'll need!</p>
+						</div>
+					</div>
 				</div>
+				</section>
+
 			</div>
 			</div>
 
@@ -117,6 +132,7 @@
 	        	</div>
 			</div>
 			</section>
+
 		</div>
 
 	</body>

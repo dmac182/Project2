@@ -22,6 +22,9 @@ img {
 	max-width: 100%;
 }
 
+/*
+Banner Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/packaging.jpg?resize=815%2C489&ssl=1
+*/
 .banner-container {
 	height: 30rem;
 	width: 100%;
@@ -60,14 +63,18 @@ img {
 }
 
 .column-container-text {
-	margin: 0 13rem;
+	margin: 0 11rem;
 }
 
 @media (min-width: 73em) {
 
 	.column-container-text {
-		margin: 0 7rem;
+		margin: 0 5rem;
 	}
+}
+
+.button-top-spacer {
+	display: block;
 }
 
 .about-container {
@@ -75,17 +82,20 @@ img {
 	background-color: white;
 }
 
-/*Banner-Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/packaging.jpg?resize=815%2C489&ssl=1*/
+/*
+About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab76eccbbd99feec6fc3f6bc.jpg
+*/
 .about-image {
-	height: 15rem;
+	height: 21.5rem;
 	width: 100%;
-	background-image: url("../img/banner.jpg");
+	background-image: url("../img/about-banner.png");
 	background-size: cover;
+	background-position: center;
 }
 
 .about-container-text {
-	margin-left: 2rem;
-	color: black;
+	margin: 2rem;
+	color: #333333;
 }
 
 /*
@@ -115,22 +125,27 @@ img {
     width: 80%;
 }
 
-.header-links {
-	margin: 0;
-	padding-top: 1.2rem;
+.header-icon {
+	vertical-align: middle;
+	height: 4.5rem;
+	margin-top: 0.25rem;
 }
 
 .main-nav-header {
-	position: relative;
+	display: inline-block;
+	vertical-align: middle;
 	margin-left: 5rem;
+	margin-top: 0.4rem;
 	color: white;
 	text-decoration: none;
+	text-align: center;
 }
 
 .main-nav-header-left {
-	position: relative;
+	display: inline-block;
 	color: white;
 	text-decoration: none;
+	text-align: center;
 }
 
 
@@ -172,7 +187,7 @@ img {
 	bottom: 0;
 	height: 5rem; /*Height of the footer*/
 	width: 100%;
-	background-color: black;
+	background-color: #000;
 }
 
 .main-footer-nav-container {
@@ -271,6 +286,7 @@ h1 {
 	font-family: "Impact", arial, sans-serif;
 	font-weight: normal;
 	font-size: 2rem;
+	margin: 0;
 }
 
 h2 {
