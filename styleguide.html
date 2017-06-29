@@ -350,31 +350,31 @@
         <div class="text-spacer-large">
         <h3>Rendered Element:</h3>
 	        <div class="main-nav-container">
+	        <div class="header-link-container">
 	        	<nav>
-	        	<h1>
-	        	<a href="#index" class="main-nav-header">CRATE LIST</a>
-	        	<a href="#crate_list" class="main-nav-header">SUBSCRIPTIONS</a>
-	        	<a href="#community" class="main-nav-header">COMMUNITY</a>
-	        	</h1>
+	        		<div class="header-links">
+	        			<a href="#index" class="main-nav-header-left"><img class="header-icon" src="img/crate_icon.png" alt="CRATE Crate Icon"></a>
+	        			<a href="#crate_list" class="main-nav-header"><h1>CRATE LIST</h1></a>
+	        			<a href="#cart" class="main-nav-header"><h1>CART</h1></a>
+	        		</div>
 	        	</nav>
 	        </div>
 		</div>
 
         <div class="text-spacer-medium">
         <h3>CSS Selector:</h3>
-        <p>.main-nav-container, .main-nav-header</p>
+        <p>.main-nav-container, .main-link-container, .header-links, .main-nav-header, main-nav-header-left</p>
         </div>
 
         <div class="text-spacer-code">
         <h3>Sample Code:</h3>
         <code>
         	&lt;div class="main-nav-container"&gt;
+        	&lt;div class="header-link-container"&gt;
 	        	&lt;nav&gt;
-	        	&lt;h1&gt;
-	        	&lt;a href="#index" class="main-nav-header"&gt;CRATE LIST&lt;/a&gt;
-	        	&lt;a href="#crate_list" class="main-nav-header"&gt;SUBSCRIPTIONS&lt;/a&gt;
-	        	&lt;a href="#community" class="main-nav-header"&gt;COMMUNITY&lt;/a&gt;
-	        	&lt;/h1&gt;
+	        	&lt;a href="#index" class="main-nav-header"&gt;&lt;img class="header-icon" src="img/crate_icon.png" alt="CRATE Crate Icon"&gt;&lt;/a&gt;
+	        	&lt;a href="#crate_list" class="main-nav-header"&gt;&lt;h1&gt;CRATE LIST&lt;/h1&gt;&lt;/a&gt;
+	        	&lt;a href="#cart" class="main-nav-header"&gt;&lt;h1&gt;CART&lt;/h1&gt;&lt;/a&gt;
 	        	&lt;/nav&gt;
 	        &lt;/div&gt;
 	    </code>
@@ -463,11 +463,13 @@
       <section>
       	<h2>Category Listing</h2>
       	<div class="text-spacer-large">
-      	<h3>Rendered Elements</h3>
+      	<h3>Rendered Elements:</h3>
       		<a href="#categories"><div class="category-container">
+      		<div class="category-fix">
       		<img src="img/books_example.jpg" alt="Category Example">
       		<h2>Books</h2>
       		<p class="category-spacer">Science fiction, biographies, history, any type of book you could want!</p>
+      		</div>
       		</div></a>
       	</div>
 
@@ -476,9 +478,78 @@
       	<p>.category-container, .category-spacer</p>
       	</div>
 
+      	<div class="text-spacer-code">
+      	<h3>Sample Code:</h3>
       	<code>
-      		
+      		&lt;a href="#categories"&gt;&lt;div class="category-container"&gt;
+      		&lt;img src="img/books_exmaple.jpg" alt="Category Example"&gt;
+      		&lt;h2&gt;Books&lt;/h2&gt;
+      		&lt;p class="category-spacer"&gt;Science fiction, biographies, history, any type of book you could want!&lt;/p&gt;
+      		&lt;/div&gt;&lt;/a&gt;
       	</code> 
+      	</div>
+      </section>
+
+
+     <!-- Page Footer Example -->
+      <section>
+      	<h2>Page Footer</h2>
+      	<div class="text-spacer-large">
+      	<h3>Rendered Elements:</h3>
+      		<div class="main-footer-nav-container">
+      		<div class="footer-content-container">
+      			<div class="footer-content">
+      					<h3 class="footer-text">Follow Us: </h3>
+			        	<a href="#gmail">
+			        	<img class="footer-icon" src="img/email.png" alt="Contact Icons"></a>
+
+			  			<a href="#facebook">
+			        	<img class="footer-icon" src="img/facebook.png" alt="Contact Icons"></a>
+
+			        	<a href="#twitter">
+			        	<img class="footer-icon" src="img/twitter.png" alt="Contact Icons"></a>
+
+			        	<a href="#youtube">
+			        	<img class="footer-icon" src="img/youtube.png" alt="Contact Icons"></a>
+
+			        	<a href="#snapchat">
+			        	<img class="footer-icon" src="img/snapchat.png" alt="Contact Icons"></a>
+      			</div>
+      		</div>
+      		</div>
+
+      	<div class="text-spacer-medium">
+      	<h3>CSS Selector:</h3>
+      	<p>.main-footer-nav-container, .footer-content-container, .footer-content,
+      	.footer-icon, .footer-text</p>
+      	</div>
+
+      	<div class="text-spacer-code">
+      	<h3>Sample Code:</h3>
+      	<code>
+      		&lt;div class="main-footer-nav-container"&gt;
+      		&lt;div class="footer-content-container"&gt;
+      			&lt;div class="footer-content"&gt;
+      					&lt;h3 class="footer-text"&gt;Follow Us: &lt;/h3&gt;
+			        	&lt;a href="#gmail"&gt;
+			        	&lt;img class="footer-icon" src="img/email.png" alt="Contact Icons"&gt;&lt;/a&gt;
+
+			  			&lt;a href="#facebook"&gt;
+			        	&lt;img class="footer-icon" src="img/facebook.png" alt="Contact Icons"&gt;&lt;/a&gt;
+
+			        	&lt;a href="#twitter"&gt;
+			        	&lt;img class="footer-icon" src="img/twitter.png" alt="Contact Icons"&gt;&lt;/a&gt;
+
+			        	&lt;a href="#youtube"&gt;
+			        	&lt;img class="footer-icon" src="img/youtube.png" alt="Contact Icons"&gt;&lt;/a&gt;
+
+			        	&lt;a href="#snapchat"&gt;
+			        	&lt;img class="footer-icon" src="img/snapchat.png" alt="Contact Icons"&gt;&lt;/a&gt;
+      			&lt;/div&gt;
+      		&lt;/div&gt;
+      		&lt;/div&gt;
+      	</code> 
+      	</div>
       </section>
 
     </section>
