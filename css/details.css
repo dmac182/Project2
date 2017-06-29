@@ -1,11 +1,15 @@
 /*
+  STYLING FOR THE DETAILS PAGE
+  Default styling for the details page elements 
+*/
+
+/*
 Image for main Loot Crate Product Image: http://s3.amazonaws.com/digitaltrends-uploads-prod/2016/01/loot-crate-service-delivery-nerd-geek-culture.jpg
 */
 
 .loot-info-left-container {
   position: relative;
-  text-align: center;
-  position: relative;
+  text-align: left;
   margin-top: 2rem;
 }
 
@@ -56,13 +60,19 @@ Image for main Loot Crate Product Image: http://s3.amazonaws.com/digitaltrends-u
 
 .cart-button {
   display: inline-block;
-  margin-left: 1.5rem;
+  margin-left: 0.85rem;
 }
+
+/*
+Loot Crate Product Image Examples: http://www.pickurgift.com/blog/wp-content/uploads/2014/07/examples-of-past-loot-crates.jpg?w=560
+and: http://bensbargains.net/thecheckout/wp-content/uploads/Loot-Crate.jpg
+*/
 
 .product-images-container {
   background-color: white;
   padding: 1.5rem;
   margin-top: 2rem;
+  text-align: center;
 }
 
 .product-image-text {
