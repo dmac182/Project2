@@ -1,11 +1,28 @@
-* {
-  box-sizing: border-box;
-}
+/*
+  STYLING FOR THE CRATE CHECKOUT PAGE
+  Default styling for crate checkout page
+*/
  
-/* Styling */
-.panel-body {
-  padding: 45px 80px 0;
-  flex: 1;
+.checkout-info-left-container {
+  position: relative;
+  text-align: left;
+}
+
+.checkout-info-right-container {
+  position: relative;
+  margin-top: 0.5rem;
+  padding-left: 0;
+}
+
+@media (min-width: 73em) {
+
+  .checkout-info-right-container {
+    padding-left: 2rem;
+  }
+}
+
+.cart-item {
+  height: 10rem;
 }
 
 /* Styling for Input Fields */
@@ -22,14 +39,14 @@
 
 /* Styling for Order */
 .order-total {
-  text-align: right;
+  text-align: left;
+  color: #d2722d;
 }
  
 /* font styling for input text and passwords */
 input[type='text'],
 input[type='password'] {
   font-size: 16px;
-  width: 100%;
   height: 50px;
   padding-right: 40px;
   padding-left: 16px;

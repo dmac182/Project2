@@ -15,7 +15,6 @@ Image for main Loot Crate Product Image: http://s3.amazonaws.com/digitaltrends-u
 
 .loot-info-right-container {
   position: relative;
-  text-align: left;
   margin-top: 0.5rem;
   padding-left: 0;
 }
@@ -53,7 +52,6 @@ Image for main Loot Crate Product Image: http://s3.amazonaws.com/digitaltrends-u
 }
 
 .dropdown-box-tshirt {
-  text-align: left;
   border-radius: 7px;
   padding: 0.5rem 1.5rem;
 }

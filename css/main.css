@@ -89,7 +89,7 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 	height: 21.5rem;
 	width: 100%;
 	background-image: url("../img/about-banner.png");
-	background-size: cover;
+	background-size: 100% 100%;
 	background-position: center;
 }
 
