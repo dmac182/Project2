@@ -6,15 +6,14 @@
 /*
 T-Shirt Placeholder Image: http://pixel.nymag.com/imgs/fashion/daily/2016/04/28/white-t-shirt-e-comm/alexander-chee.w710.h473.2x.jpg
 */
+
 .checkout-info-left-container {
   position: relative;
-  text-align: left;
 }
 
 .checkout-info-right-container {
   position: relative;
   margin-top: 0.5rem;
-  padding-left: 0;
 }
 
 @media (min-width: 73em) {
@@ -59,7 +58,7 @@ input[type='password'] {
   outline: none;
 }
  
-/* Changes border for inout fields when they are focused */
+/* Changes border for input fields when they are focused */
 input[type='text']:focus,
 input[type='password']:focus {
   border-color: rgb(119, 219, 119);
@@ -87,12 +86,4 @@ input[type='password']:focus {
 .checkout-button {
   display: inline-block;
   margin: 1rem 1rem 0 0;
-}
-
-.blue-border {
-  border: 1px solid rgb(110, 178, 251);
-}
-
-.warning {
-  border-color: #f62f5e;
 }
