@@ -2,7 +2,10 @@
   STYLING FOR THE CRATE CHECKOUT PAGE
   Default styling for crate checkout page
 */
- 
+
+/*
+T-Shirt Placeholder Image: http://pixel.nymag.com/imgs/fashion/daily/2016/04/28/white-t-shirt-e-comm/alexander-chee.w710.h473.2x.jpg
+*/
 .checkout-info-left-container {
   position: relative;
   text-align: left;
@@ -22,7 +25,7 @@
 }
 
 .cart-item {
-  height: 10rem;
+  height: 15rem;
 }
 
 /* Styling for Input Fields */
@@ -74,13 +77,16 @@ input[type='password']:focus {
 }
 
 .panel-footer {
-  display: flex;
+  margin-top: 1rem;
+  display: inline-block;
   width: 100%;
-  height: 96px;
-  padding: 0 80px;
   justify-content: space-between;
   align-items: center;
-  display: flex;
+}
+
+.checkout-button {
+  display: inline-block;
+  margin: 1rem 1rem 0 0;
 }
 
 .blue-border {

@@ -14,7 +14,11 @@
 
 }
 
-.grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3, .grid-col-1of2-alt {
+.grid-col-1of2-alt {
+	width: 50%;
+}
+
+.grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3 {
 
 	width: 100%;
 
