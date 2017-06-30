@@ -28,7 +28,6 @@ T-Shirt Placeholder Image: http://pixel.nymag.com/imgs/fashion/daily/2016/04/28/
 
 /* Styling for Input Fields */
 .input-fields {
-  display: flex;
   justify-content: space-between;
 }
  
@@ -49,9 +48,7 @@ input[type='text'],
 input[type='password'] {
   font-size: 16px;
   height: 50px;
-  width: 100%;
-  padding-right: 40px;
-  padding-left: 16px;
+  width: 90%;
   color: black;
   border: 1px solid rgb(225, 225, 225);
   border-radius: 4px;
@@ -66,18 +63,14 @@ input[type='password']:focus {
 
 /* Styling for input fields */ 
 .small-inputs {
-  display: flex;
+  display: block;
   margin-top: 1rem;
   justify-content: space-between;
-}
- 
-.small-inputs div {
   width: 20rem;
 }
 
 .panel-footer {
   margin-top: 1rem;
-  display: inline-block;
   width: 100%;
   justify-content: space-between;
   align-items: center;

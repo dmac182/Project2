@@ -2,13 +2,14 @@
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 		<title>Crate Crate Checkout</title>
 
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/grids.css" rel="stylesheet">
 		<link href="css/checkout.css" rel="stylesheet">
+		<link href="css/details.css" rel="stylesheet">
 		
 	</head>
 
@@ -39,7 +40,7 @@
 				<div class="grid-row">
 				<!-- Product Details regarding items in cart -->
 			      <section id="product-details">
-			      	<div class="grid-col-1of2-alt checkout-info-left-container">
+			      	<div class="grid-col-1of2 checkout-info-left-container">
 
 			      		<h2>Items in Cart</h2>
 			      		<p>- Loot Crate: 1 Month Subscription - $15</p>
@@ -53,88 +54,67 @@
 			      </section>
 
 			      <section id="order-form">
-			      	<div class="grid-col-1of2-alt checkout-info-right-container">
+			      	<div class="grid-col-1of2 checkout-info-right-container">
 			      		<h2>Payment Info</h2>
 			      		<p>Enter Credit Card Details to Complete your Order.</p>
 
 			      	<!-- Text fields for payment information -->
 			  		<div class="input-fields">
-			  			<div class="column-1">
 
 			  					<div class="small-inputs">
-			  						<div>
 			  							<label for="cardnumber">Card Number</label>
 			  							<input type="text" id="cardnumber">
-			  						</div>
 			  					</div>
 
 			  					<div class="small-inputs">
-			  						<div>
 			  							<label for="date">Valid Through</label>
 			  							<input type="text" id=" card-date">
-			  						</div>
 			  					</div>
 
 			  					<div class="small-inputs">
-			  						<div>
 			  							<label for="cardnumber">Cardholder Name</label>
 			  							<input type="text" id="cardholder">
-			  						</div>
 			  					</div>
 
 
 			  					<h2>Billing Info</h2>
 			  					<div class="small-inputs">
-			  						<div>
 			  							<label for="cardnumber">Billing Address</label>
 			  							<input type="text" id="billing-address">
-			  						</div>
 			  					</div>
 
 			  					<div class="small-inputs">
-			  						<div>
 			  							<label for="cardnumber">E-mail Address</label>
 			  							<input type="text" id="e-mail">
-			  						</div>
 			  					</div>
 
 			  					<div class="small-inputs">
-			  						<div>
 			  							<label for="cardnumber">Shipping Address</label>
 			  							<input type="text" id="shipping-address">
-			  						</div>
 			  					</div>
 
 			  					<div class="small-inputs">
-			  						<div>
 			  							<label for="cardnumber">City</label>
 			  							<input type="text" id="city">
-			  						</div>
 			  					</div>
 
 			  					<div class="small-inputs">
-			  						<div>
 			  							<label for="cardnumber">Postal Code</label>
 			  							<input type="text" id="postal-code">
-			  						</div>
 			  					</div>
 
 			  					<div class="small-inputs">
-			  						<div>
 			  							<label for="cardnumber">Country</label>
 			  							<input type="text" id="country">
-			  						</div>
 			  					</div>
 
 			  					<div class="small-inputs">
-			  						<div>
 			  							<label for="cardnumber">Promo Code</label>
 			  							<input type="text" id="promo-code">
-			  						</div>
 			  					</div>
 
 			  					<h2>Order Summary</h2>
-				      			<ul>
+				      			<ul class="list-fix">
 					           		<li>Loot Crate: 1 Month Subscription - $15</li>
 					           		<li>T-Shirt: Mens - Extra Large (Free)</li>
 					        	</ul>
@@ -145,14 +125,11 @@
 					        	<!-- Checkout Section Container -->
 								<section id="checkout-buttons">
 								  	<div class="panel-body">
-								  		<div class="panel-footer">
 								  			<a href="receipt.html" class="basic-button checkout-button">Checkout</a>
-								  			<a href="crate_list.html" class="basic-button checkout-button">Add Subscription</a>
+								  			<a href="crate_list.html" class="basic-button checkout-button">Add Another Crate</a>
 								  			<a href="details.html" class="basic-button2 checkout-button">Back</a>  			
-								  		</div>
 								  	</div> 
 			      				</section>
-			      		</div>
 			      	</div>
 			      	</div>
 			      </section>  
