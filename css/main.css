@@ -36,18 +36,19 @@ Banner Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/pac
 .banner-info-container {
 	position: relative;
 	background-color: rgba(30,30,30,.9);
-	height: 70%;
-	width: 40%;
-	top: 15%;
+	height: auto;
+	width: 70%;
+	top: 50%;
+	transform: translateY(-50%);
 	margin: 0 auto;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 2%;
+	padding: 2% 2% 7% 2%;
 }
 
 .banner-spacer {
-	margin-bottom: 13%;
+	margin-bottom: 2rem;
 }
 
 .home-product-container {
@@ -60,10 +61,6 @@ Banner Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/pac
 
 .home-product-image {
 	height: 20rem;
-}
-
-.column-container-text {
-	margin: 0 11rem;
 }
 
 @media (min-width: 73em) {
@@ -111,7 +108,7 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 .header-container {
 	position: fixed;
 	top: 0;
-	height: 5rem; /*Height of the header*/
+	height: auto; /*Height of the header*/
 	width: 100%;
 	z-index: 1;
 }
@@ -128,7 +125,7 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 80%;
+    width: 100%;
 }
 
 .header-icon {
@@ -140,11 +137,18 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 .main-nav-header {
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 5rem;
+	margin-left: 2rem;
 	margin-top: 0.4rem;
 	color: white;
 	text-decoration: none;
 	text-align: center;
+}
+
+@media (min-width: 73em) {
+
+	.main-nav-header {
+		margin-left: 5rem;
+	}
 }
 
 .main-nav-header-left {
@@ -173,7 +177,7 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 
 .body-container {
 	height: 100%;
-	margin-top: 5rem; /*Height of the header*/
+	margin-top: 4.7rem; /*Height of the header*/
 	padding-bottom: 10rem; /*Height of the footer*/
 	background-color: #1e1e1e;
 }
@@ -191,7 +195,7 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 .footer-container {
 	position: absolute;
 	bottom: 0;
-	height: 5rem; /*Height of the footer*/
+	height: auto; /*Height of the footer*/
 	width: 100%;
 	background-color: #000;
 }
@@ -210,6 +214,7 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 
 .footer-content {
 	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .footer-text {
@@ -291,8 +296,15 @@ body {
 h1 {
 	font-family: "Impact", arial, sans-serif;
 	font-weight: normal;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin: 0;
+}
+
+@media (min-width: 73em) {
+
+	h1 {
+		font-size: 2rem;
+	}
 }
 
 h2 {
